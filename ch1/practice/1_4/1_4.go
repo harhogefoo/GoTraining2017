@@ -9,6 +9,10 @@ import (
 )
 
 func main() {
+	if !hasArgs() {
+		fmt.Println("usage: go run 1_4.go filename1 filename2 ... ")
+		return
+	}
 	counts := make(map[string]int)
 	dupFiles := make(map[string][]string)
 
@@ -32,6 +36,10 @@ func main() {
 			fmt.Printf("%d\t%s\t%s\n", n, line, strings.Join(dupFiles[line], ","))
 		}
 	}
+}
+
+func hasArgs() bool {
+	return len(os.Args) < 1
 }
 
 func countLines(f *os.File, counts map[string]int, dupFiles map[string][]string) {
