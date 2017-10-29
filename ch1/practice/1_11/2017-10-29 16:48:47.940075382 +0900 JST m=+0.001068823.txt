@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="referrer" content="origin-when-cross-origin" />
+<meta charset="utf-8">
+<!-- Google Tag Manager -->
+<script type="text/javascript">
+!function(){
+dataLayer = window.dataLayer || [];
+dataLayer = dataLayer.concat([{"lifecycle_stage":"prospect"},{"logged-in":false},{"customer":{"status":"prospect","highest_subscription":false}}]);
+}();
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5P2THV');</script>
+<!-- End Google Tag Manager --><!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//www.alexa.com/js/ext/mixpanel-2-latest.js".match(/^\/\//)?"https://www.alexa.com/js/ext/mixpanel-2-latest.js":"//www.alexa.com/js/ext/mixpanel-2-latest.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+mixpanel.init("23564df485f0237ed31a0187a9aa3aad"
+, {ip:0, api_host:"//www.alexa.com/mixpanel" });
+</script><!-- end Mixpanel -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,100,200,300,400,600|Roboto+Slab:400,700|Lato:100,200,300,400,700" rel="stylesheet" type="text/css">
+<script src="https://use.typekit.net/ldr1mow.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<title>Alexa Top 500 Global Sites</title><link href="/css/scssv2/compiled/style.css?1508445104" media="screen" rel="stylesheet" type="text/css" >
+<link href="/css/scssv2/compiled/mobile.css?1508459231" media="screen" rel="stylesheet" type="text/css" ><script type="text/javascript" src="/js/ext/jquery-183.js?1508445104"></script>
+<script type="text/javascript" src="/js/ext/underscore.js?1508445104"></script>
+<script type="text/javascript" src="/js/topsites.js?1508876829"></script>
+<!--[if lt IE 9]>
+<script src="/js/ext/html5shiv-min.js"></script>
+<![endif]-->
+<noscript>
+<style type="text/css">
+.no-js-content{
+display: block;
+}
+.hide-js-content{
+display: none;
+}
+</style>
+<!--	<img height="1" width="1" border="0" alt="" style="display:none" src="https://www.facebook.com/tr?id=648783858509466&ev=NoScript" />-->
+</noscript>	</head>
+<body id="globalPage" class=" globalPage topsites LoggedOut noSub ">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P2THV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->    <script type='text/javascript'>
+mixpanel.register({"logged_in":false});
+mixpanel.register({"lifecycle_stage":"prospect","highest_subscription":false});
+</script>		<div class="body-container">
+<div class="alx-top">
+<header id="alx-header" class="alx-header LoggedOut">
+<div class='row-fluid'>
+<section id='alexa-logo' class='alexa-logo'>
+<a class='top-nav-link' href='/' title='Go to home page'><img alt='Alexa logo' src='/images/homepage/alexa-logo.png' style='max-width: 255px;'></a>
+<a href='#' class='expandabletoggle maxTablet top-nav-link'><i class='fa fa-bars' aria-hidden='true'></i></a>
+<ul class='MobileMenu expandable maxTablet' style='display:none;'>
+<li>
+<p class='expandabletoggle' href='https://try.alexa.com/marketing-stack'>
+Features
+</p>
+<ul class='expandable' style='display:none;'>
+<li>
+<p class='expandabletoggle'>SEO Tools</p>
+<ul class='expandable' style='display: none;'>
+<li><a href='https://try.alexa.com/marketing-stack/keyword-difficulty-tool'>Keyword Difficulty Tool</a></li>
+<li><a href='https://try.alexa.com/marketing-stack/competitor-keyword-matrix'>Competitor Keyword Matrix</a></li>
+<li><a href='https://try.alexa.com/marketing-stack/on-page-seo-checker'>On-Page SEO Checker</a></li>
+<li><a href='https://try.alexa.com/marketing-stack/competitor-backlink-checker'>Competitor Backlink Checker</a></li>
+<li><a href='https://try.alexa.com/marketing-stack/seo-audit-tool'>SEO Audit Tool</a></li>
+</ul>
+</li>
+<li>
+<p class='expandabletoggle'>Competitive Analysis Tools</p>
+<ul class='expandable' style='display: none;'>
+<li><a href='https://try.alexa.com/marketing-stack/audience-overlap-tool'>Audience Overlap Tool</a></li>
+<li><a href='https://try.alexa.com/marketing-stack/site-comparisons'>Site Comparisons</a></li>
+<li><a href='https://alexa.com/siteinfo'>Website Traffic Statistics</a></li>
+<li><a href='https://www.alexa.com/find-similar-sites'>Find Similar Sites</a></li>
+<li><a href='https://www.alexa.com/topsites'>Top Sites</a></li>
+</ul>
+</li>
+<li><a href='https://try.alexa.com/offer/ebook/5-tools-for-complete-marketing-workflow/'>5 Tools for a Complete Marketing Workflow</a></li>
+</ul>
+</li>
+<li>
+<a href='#'>Resources</a>
+<ul class='expandable' style='display: none;'>
+<li><a href='https://try.alexa.com/resources'>eBooks</a></li>
+<li><a href='https://try.alexa.com/alexa-tutorials/'>Video Tutorials</a></li>
+<li><a href='http://blog.alexa.com'>Blog</a></li>
+</ul>
+</li>
+<li>
+<a href='https://alexa.com/plans'>Pricing</a>
+</li>
+<li>
+<a href='https://www.alexa.com/login'>Log in</a>
+</li>
+<li>
+<a href='https://www.alexa.com/plans'>SIGN UP</a>
+</li>
+</ul>
+</section>
+<section class='alexa-menu Desktop pull-right'>
+<div class='menu-tab current'><a class='top-nav-link' href='https://try.alexa.com/marketing-stack/' >Features <i class='fa fa-caret-down' aria-hidden='true'></i></a>
+<div class='drop-cont'>
+<div class='row-fluid dropDown'>
+<div class='Block'>
+<a class='title top-nav-link' href='https://try.alexa.com/marketing-stack/seo-tools'>SEO Tools</a>
+<ul class=''>
+<li><a class='top-nav-link' href='https://try.alexa.com/marketing-stack/keyword-difficulty-tool'>Keyword Difficulty Tool</a></li>
+<li><a class='top-nav-link' href='https://try.alexa.com/marketing-stack/competitor-keyword-matrix'>Competitor Keyword Matrix</a></li>
+<li><a class='top-nav-link' href='https://try.alexa.com/marketing-stack/on-page-seo-checker'>On-Page SEO Checker</a></li>
+<li><a class='top-nav-link' href='https://try.alexa.com/marketing-stack/competitor-backlink-checker'>Competitor Backlink Checker</a></li>
+<li><a class='top-nav-link' href='https://try.alexa.com/marketing-stack/seo-audit-tool'>SEO Audit Tool</a></li>
+</ul>
+</div>
+<div class='Block'>
+<a class='title top-nav-link' href='https://try.alexa.com/marketing-stack/competitive-analysis-tools'>Competitive Analysis Tools</a>
+<ul class=''>
+<li><a class='top-nav-link ' href='https://try.alexa.com/marketing-stack/audience-overlap-tool'>Audience Overlap Tool</a></li>
+<li><a class='top-nav-link ' href='https://try.alexa.com/marketing-stack/site-comparisons'>Site Comparisons</a></li>
+<li><a class='top-nav-link ' href='/siteinfo'>Website Traffic Statistics</a></li>
+<li><a class='top-nav-link ' href='/find-similar-sites'>Find Similar Sites</a></li>
+<li><a class='top-nav-link active' href='/topsites'>Top Sites</a></li>
+</ul>
+</div>
+<div class='Block'>
+<a class='title' target='_blank' href='https://try.alexa.com/offer/ebook/5-tools-for-complete-marketing-workflow/'>5 Tools for a Complete Marketing Workflow</a>
+<a class='top-nav-link' target='_blank' href='https://try.alexa.com/offer/ebook/5-tools-for-complete-marketing-workflow/'><img src='/images/ebook.png'/></a>
+<a class='btn btn-block btn-large btn-n3 outline top-nav-link' target='_blank' href='https://try.alexa.com/offer/ebook/5-tools-for-complete-marketing-workflow/'>Download your Ebook</a>
+</div>
+</div>
+</div>
+</div>
+<div class='menu-tab '>Resources <i class='fa fa-caret-down' aria-hidden='true'></i>
+<div class='drop-cont Single'>
+<ul class='dropDown'>
+<li><a class='top-nav-link' href='https://try.alexa.com/resources'>eBooks</a></li>
+<li><a class='top-nav-link' href='https://try.alexa.com/alexa-tutorials/'>Video Tutorials</a></li>
+<li><a class='top-nav-link' href='http://blog.alexa.com/'>Blog</a></li>
+</ul>
+</div>
+</div>
+<a class='menu-tab  top-nav-link' href='/plans'>Pricing</a>
+<a class='menu-tab  top-nav-link' href="/login?resource=https://www.alexa.com/topsites">Log in</a>
+<a class='Mkbutton Orange navigation  top-nav-link' href='/plans'>SIGN UP</a>
+</section>
+</div>						</header>
+<section id="alx-content" class="alx-content">
+<div class="row-fluid">
+<div class="row-fluid TopSites Alexarest">
+<section class="page-product-top">
+<div class="content-top">
+<div id="ExitIntent" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display:none;">
+<div class="modal-dialog modal-lg">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>
+<h3 class="first-slide" id="question-1">What would you like to accomplish with Alexa?</h3>
+<h3 class="second-slide" id="question-2" style="display:none;">What is your job function?</h3>
+<div class="third-slide-one" style="display: none;">
+<h3><i class="fa fa-check-circle" aria-hidden="true"></i> You'd be a great fit for our Advanced plan</h3>
+<p>Alexa's Advanced plan makes it easy to increase your website traffic.</p>
+<ul>
+<li>Improve SEO</li>
+<li>Find keyword ideas</li>
+<li>Find marketing ideas</li>
+<li>Research competitors</li>
+</ul>
+</div>
+<div class="third-slide-two" style="display: none;">
+<h3><i class="fa fa-check-circle" aria-hidden="true"></i> You'd be a great fit for our Insight plan</h3>
+<p>Alexa's Insight plan makes it easy to research and analyze websites.</p>
+<ul>
+<li>Get website traffic stats</li>
+<li>Research competitors</li>
+<li>Compare websites</li>
+</ul>
+</div>
+<div class="third-slide-three" style="display: none;">
+<h3><i class="fa fa-check-circle" aria-hidden="true"></i> You'd be a great fit for our Certified Alexa Rank plans</h3>
+<p>These plans make it easy to measure your website’s popularity.</p>
+<ul>
+<li>Get a Certified Alexa Rank</li>
+<li>Compare websites</li>
+<li>Research basic website stats</li>
+</ul>
+</div>
+</div>
+<div class="modal-body">
+<div class="row-fluid first-slide">
+<div class="span6">
+<div class="button" data-question-id="question-1" data-choice="traffic">Increase website traffic</div>
+<div class="button" data-question-id="question-1" data-choice="seo">Improve SEO</div>
+<div class="button" data-question-id="question-1" data-choice="keyword">Find keyword ideas</div>
+<div class="button" data-question-id="question-1" data-choice="marketing">Find marketing ideas</div>
+</div>
+<div class="span6">
+<div class="button" data-question-id="question-1" data-choice="rank">Improve my Alexa Rank</div>
+<div class="button" data-question-id="question-1" data-choice="stats">Get website traffic stats</div>
+<div class="button" data-question-id="question-1" data-choice="competitors">Research competitors</div>
+<div class="button" data-question-id="question-1" data-choice="compare">Compare websites</div>
+</div>
+</div>
+<div class="row-fluid second-slide" style="display: none;">
+<div class="span6">
+<div class="button" data-question-id="question-2" data-choice="marketing">Marketing</div>
+<div class="button" data-question-id="question-2" data-choice="agency">Agency</div>
+<div class="button" data-question-id="question-2" data-choice="consultant">Consultant</div>
+<div class="button" data-question-id="question-2" data-choice="owner">Business Owner</div>
+</div>
+<div class="span6">
+<div class="button" data-question-id="question-2" data-choice="investor">Investor</div>
+<div class="button" data-question-id="question-2" data-choice="analyst">Analyst</div>
+<div class="button" data-question-id="question-2" data-choice="sales">Sales</div>
+<div class="button" data-question-id="question-2" data-choice="other">Other</div>
+</div>
+</div>
+<div class="row-fluid third-slide-one" style="display: none;">
+<a class="Mkbutton Orange" href="http://www.alexa.com/plans?tab=marketing">START MY FREE TRIAL</a>
+<a class="learn" href="https://try.alexa.com/marketing-stack">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+</div>
+<div class="row-fluid third-slide-two" style="display: none;">
+<a class="Mkbutton Orange" href="http://www.alexa.com/plans?tab=analysis">START MY FREE TRIAL</a>
+<a class="learn" href="https://try.alexa.com/marketing-stack/competitive-analysis-tools">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+</div>
+<div class="row-fluid third-slide-three" style="display: none;">
+<a class="Mkbutton Orange" href="http://www.alexa.com/plans?tab=rank">START MY FREE TRIAL</a>
+</div>
+</div>
+</div>
+</div>      <section class="page-title page-title-only">
+<div class="row-fluid">
+<span class="span12">
+<h1 class="hdr title">
+<span class="page-title-text">            The top 500 sites on the web</span>
+<span class="WhatsThis top" >
+<i class='fa fa-question-circle' aria-hidden='true'></i>
+<span class="container">
+The sites in the top sites lists are ordered by their 1 month Alexa traffic rank.<br/><br/>The 1 month rank is calculated using a combination of average daily visitors and pageviews over the past  month. The site with the highest combination of visitors and pageviews is ranked #1
+</span>
+</span>         </h1>
+</span>
+</div>
+<div class="Foldering">
+<div class="each current"><a href="/topsites">Global</a></div>
+<div class="each "><a href="/topsites/countries">By Country</a></div>
+<div class="each "><a href="/topsites/category">By Category</a></div>
+</div>
+</section>
+</div>
+</section>
+<section class="page-product-content summary">
+<span class="">
+<span class="">
+<!--       <aside class="">
+<nav>
+<ul class='navi-list tools'>
+<li id='tools-siteInfo' class=''><a class='' watch-hash  data-sync='1' href='/siteinfo'>Site Overview</a></li><li id='tools-siteComparison' class=''><span><span class='ppoverdl img-lock stay-onhover'  data-ppoverdl='ppsc'>Site Comparisons</span><span class='ppover img-lock stay-onhover' data-placement='right' data-ppover='ppsc'>Site Comparisons</span><div id="ppsc" data-title='Log In' class='hide-elem'>
+<p class="mg-btm">To access this feature please Log In to your account</p>
+<a href="/login?resource=%2Fcomparison%2F" class="btn btn-p2
+ppover-close">Log In</a>
+<a class="float-right"
+href="/register?resource=%2Fcomparison%2F">Create an Account</a>
+</div></span></li><li id='tools-sitesLinkingIn' class=''><span><span class='ppoverdl img-lock stay-onhover'  data-ppoverdl='ppli'>Sites Linking in</span><span class='ppover img-lock stay-onhover' data-placement='right' data-ppover='ppli'>Sites Linking in</span><div id="ppli" data-title='Subscribe to View' class='hide-elem'>
+<p class="mg-btm">The Sites Linking In tool is available in the Alexa Pro Basic Plan.</p>
+<a href="/plans?ax_atid=" class="btn btn-p2 ppover-close">View Plans & Pricing</a>
+</div></span></li><li id='tools-keywordResearch' class=''><span><span class='ppoverdl img-lock stay-onhover'  data-ppoverdl='ppkw'>Site Keywords</span><span class='ppover img-lock stay-onhover' data-placement='right' data-ppover='ppkw'>Site Keywords</span><div id="ppkw" data-title='Subscribe to View' class='hide-elem'>
+<p class="mg-btm">The Keyword Research tool is available in the Alexa Pro Insight Plans.</p>
+<a href="/plans?ax_atid=" class="btn btn-p2 ppover-close">View Plans & Pricing</a>
+</div></span></li><li id='tools-data' class=''><a class='track-atid' watch-hash data-atid='8085775f-5c5e-4196-b84d-1615e3966529' data-sync='1' href='https://aws.amazon.com/alexa/'><img width=170 src='/images/ads/img-siteOverview-API-ad.jpg' /></a></li>
+</ul>
+</nav>    <div class="nosub-side-ad-pos"></div>
+<div class="nosub-side-ad">
+<img src="/images/img-sideBanner-header.png" >
+<ul class="features fa fa-ul">
+<li><a href="https://try.alexa.com/marketing-stack/keyword-difficulty-tool">Keyword Difficulty Tool</a></li>
+<li><a href="https://try.alexa.com/marketing-stack/competitor-keyword-matrix">Competitor Keyword Matrix</a></li>
+<li><a href="https://try.alexa.com/marketing-stack/on-page-seo-checker">On-Page SEO Checker</a></li>
+<li><a href="https://try.alexa.com/marketing-stack/seo-audit-tool">SEO Audit Tool</a></li>
+<li><a href="https://try.alexa.com/marketing-stack/audience-overlap-tool">Audience Overlap Tool</a></li>
+<li><a href="https://try.alexa.com/marketing-stack/competitive-intelligence-tools">Competitive Intelligence</a></li>
+</ul>
+<div class="banner-foot">
+<a class="btn btn-large btn-n3 outline" href="/plans?vevent=button_click&vdata=try%20plan%20link">Try 7 days Free</a>
+<br/>
+<a href="https://try.alexa.com/marketing-stack">Learn More</a>
+</div>
+</div>              </aside> -->
+<div class="AlexaTable LightWeightTable" style="border-bottom:none;box-shadow:none;">
+<div class="tableContainer">
+<p class="pages">Showing 50 of 500 results</p>
+<div class="row-fluid TopSitesAd">
+<div class="left">Want access to the complete list?</div>
+<div class="right"><a href="/plans">TRY 7 DAYS FREE</a></div>
+</div><div class="listings table"><div class="thead">
+<div class="tr">
+<div class="th"></div>
+<div class="th">Site</div>
+<div class="th right"><span class="tsshow">Daily Time on Site            <span class="WhatsThis top" >
+<i class='fa fa-question-circle' aria-hidden='true'></i>
+<span class="container">
+<b>Daily Time on Site</b><br><br>Estimated daily time on site (mm:ss) per visitor to the site. Updated daily based on the trailing 3 months.
+</span>
+</span> </span></div>
+<div class="th right"><span class="tsshow">Daily Pageviews per Visitor            <span class="WhatsThis top" >
+<i class='fa fa-question-circle' aria-hidden='true'></i>
+<span class="container">
+<b>Daily Pageviews per Visitor</b><br><br>Estimated daily unique pageviews per visitor on the site. Updated daily based on the trailing 3 months.
+</span>
+</span> </span></div>
+<div class="th right"><span class="tsshow">% of Traffic From Search            <span class="WhatsThis top" >
+<i class='fa fa-question-circle' aria-hidden='true'></i>
+<span class="container">
+<b>% of Traffic From Search</b><br><br>The percentage of all referrals that came from Search engines over the trailing month. Updated daily.
+</span>
+</span> </span></div>
+<div class="th right"><span class="tsshow">Total Sites Linking In            <span class="WhatsThis top" >
+<i class='fa fa-question-circle' aria-hidden='true'></i>
+<span class="container">
+<b>Total Sites Linking In</b><br><br>The total number of sites that Alexa found that link to this site. For more information please see <a href="https://support.alexa.com/hc/en-us/articles/200444340" target="_blank">this explanation</a> of how Alexa determines the number of sites linking in.
+</span>
+</span> </span></div>
+</div>
+</div>
+<div class="tr site-listing">
+<div class="td number">1</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/google.com">Google.com</a>
+</p>
+<div class="description">
+Enables users to search the world's information, including webpages, images, and videos. Offers<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder"> unique features and search technology.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>8:02</p></div>
+<div class="td right"><p>8.95</p></div>
+<div class="td right"><p>4.40%</p></div>
+<div class="td right"><p>3,560,046</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">2</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/youtube.com">Youtube.com</a>
+</p>
+<div class="description">
+User-submitted videos with rating, comments, and contests.<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>8:25</p></div>
+<div class="td right"><p>4.95</p></div>
+<div class="td right"><p>15.40%</p></div>
+<div class="td right"><p>2,699,220</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">3</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/facebook.com">Facebook.com</a>
+</p>
+<div class="description">
+A social utility that connects people, to keep up with friends, upload photos, share links and <span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">videos.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>9:47</p></div>
+<div class="td right"><p>4.02</p></div>
+<div class="td right"><p>8.40%</p></div>
+<div class="td right"><p>7,601,185</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">4</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/baidu.com">Baidu.com</a>
+</p>
+<div class="description">
+The leading Chinese language search engine, provides &quot;simple and reliable&quot; search exp<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">erience, strong in Chinese language and multi-media content including MP3 music and movies, the first to offer WAP and PDA-based mobile search in China.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>7:55</p></div>
+<div class="td right"><p>6.32</p></div>
+<div class="td right"><p>8.40%</p></div>
+<div class="td right"><p>137,783</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">5</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/wikipedia.org">Wikipedia.org</a>
+</p>
+<div class="description">
+A free encyclopedia built collaboratively using wiki software. (Creative Commons Attribution-Sh<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">areAlike License).<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>4:11</p></div>
+<div class="td right"><p>3.27</p></div>
+<div class="td right"><p>68.40%</p></div>
+<div class="td right"><p>1,722,890</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">6</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/yahoo.com">Yahoo.com</a>
+</p>
+<div class="description">
+A major internet portal and service provider offering search results, customizable content, cha<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">trooms, free e-mail, clubs, and pager.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>4:05</p></div>
+<div class="td right"><p>3.79</p></div>
+<div class="td right"><p>8.30%</p></div>
+<div class="td right"><p>648,102</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">7</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/google.co.in">Google.co.in</a>
+</p>
+<div class="description">
+Indian version of this popular search engine. Search the whole web or only webpages from India.<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder"> Interfaces offered in English, Hindi, Bengali, Telugu, Marathi and Tamil.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>8:06</p></div>
+<div class="td right"><p>11.12</p></div>
+<div class="td right"><p>0.40%</p></div>
+<div class="td right"><p>27,319</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">8</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/reddit.com">Reddit.com</a>
+</p>
+<div class="description">
+User-generated news links. Votes promote stories to the front page.<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>15:53</p></div>
+<div class="td right"><p>10.38</p></div>
+<div class="td right"><p>17.20%</p></div>
+<div class="td right"><p>479,134</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">9</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/qq.com">Qq.com</a>
+</p>
+<div class="description">
+China&#039;s largest and most used Internet service portal owned by Tencent, Inc founded in Nov<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">ember, 1998. Presently, Tencent is aiming its operations at the strategic goal of providing users with a &quot;one-stop online life service&quot;. Tencent&#039;s Internet platforms QQ, QQ.com, QQ Games, and PaiPai.com have brought together China&#039;s largest Internet community. Tencent&#039;s communications and information-sharing services include QQ.com, QQ Instant Messenger, QQ Mail, and search engine SOSO. Linked up with heavily used features such as forums, chat rooms, and QQ Groups, Tencent&#039;s Qzone has grown into China&#039;s largest personal Internet space. These services foster group interaction and resource sharing. Virtual products such as QQ Show, QQ Pet, QQ Game, and QQ Music/Radio/Live have been successful in providing entertainment and customization options to users. Mobile phone users can take advantage of a number of value-added wireless services. Tencent&#039;s PaiPai.com is a C2C on-line shopping platform that seamlessly integrates into Tencent&#039;s other community platforms.As of June 30th, 2009, the number of registered QQ Instant Messenger users has reached 990.0 million. Active users numbered at 448.0 million. Peak concurrent users have reached 61.30 million. QQ Games platform counted about 6.2 million users simultaneously on-line. QQ.com has become China&#039;s most visited Internet portal website. PaiPai.com has also become China&#039;s second largest Internet shopping platform.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>4:38</p></div>
+<div class="td right"><p>3.91</p></div>
+<div class="td right"><p>4.60%</p></div>
+<div class="td right"><p>257,985</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">10</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/taobao.com">Taobao.com</a>
+</p>
+<div class="description">
+Launched in May 2003, Taobao Marketplace (www.taobao.com) is the online shopping destination of<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder"> choice for Chinese consumers looking for wide selection, value and convenience. Shoppers choose from a wide range of products and services on Taobao Marketplace, which features hundreds of millions of product and service listings. Taobao Marketplace was China's largest online shopping destination in terms of gross merchandise volume in 2013, according to iResearch. Taobao Marketplace is a business within Alibaba Group.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>8:52</p></div>
+<div class="td right"><p>4.15</p></div>
+<div class="td right"><p>5.20%</p></div>
+<div class="td right"><p>53,690</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">11</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/amazon.com">Amazon.com</a>
+</p>
+<div class="description">
+Amazon.com seeks to be Earth's most customer-centric company, where customers can find and disc<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">over anything they might want to buy online, and endeavors to offer its customers the lowest possible prices. Site has numerous personalization features and services including one-click buying, extensive customer and editorial product reviews, gift registries, gift certificates, wish lists, restaurant and movie listings, travel, and photo processing.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>8:05</p></div>
+<div class="td right"><p>8.50</p></div>
+<div class="td right"><p>21.70%</p></div>
+<div class="td right"><p>827,984</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">12</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/tmall.com">Tmall.com</a>
+</p>
+<div class="description">
+Launched in April 2008, Tmall.com (www.tmall.com) is dedicated to providing a premium shopping <span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">experience for increasingly sophisticated Chinese consumers in search of top-quality branded merchandise. A large number of international and Chinese brands and retailers have established storefronts on Tmall.com. According to iResearch, Tmall.com was the largest brands and retail platform in China in terms of gross merchandise volume in 2013. Tmall.com is a business within Alibaba Group.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>6:38</p></div>
+<div class="td right"><p>2.21</p></div>
+<div class="td right"><p>1.40%</p></div>
+<div class="td right"><p>11,213</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">13</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/twitter.com">Twitter.com</a>
+</p>
+<div class="description">
+Social networking and microblogging service utilising instant messaging, SMS or a web interface.<span class="remainder">.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>6:13</p></div>
+<div class="td right"><p>3.27</p></div>
+<div class="td right"><p>12.10%</p></div>
+<div class="td right"><p>5,571,981</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">14</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/google.co.jp">Google.co.jp</a>
+</p>
+<div class="description">
+多言語対応サーチエンジンの日本版。ウェブ、イメージおよびニュース検索、Usenet掲示板。<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>7:24</p></div>
+<div class="td right"><p>12.28</p></div>
+<div class="td right"><p>0.40%</p></div>
+<div class="td right"><p>67,266</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">15</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/vk.com">Vk.com</a>
+</p>
+<div class="description">
+Социальная сеть как средство для коммуникации и поиска людей. Международный сервис, созданный р<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">оссийскими разработчиками.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>10:51</p></div>
+<div class="td right"><p>4.98</p></div>
+<div class="td right"><p>7.50%</p></div>
+<div class="td right"><p>508,996</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">16</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/live.com">Live.com</a>
+</p>
+<div class="description">
+Search engine from Microsoft.<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>3:60</p></div>
+<div class="td right"><p>3.26</p></div>
+<div class="td right"><p>12.60%</p></div>
+<div class="td right"><p>55,559</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">17</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/sohu.com">Sohu.com</a>
+</p>
+<div class="description">
+资源导航为主要业务的门户网站，经营综合性业务，社区，无线等增值服务。<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>4:08</p></div>
+<div class="td right"><p>4.40</p></div>
+<div class="td right"><p>3.70%</p></div>
+<div class="td right"><p>27,933</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">18</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/instagram.com">Instagram.com</a>
+</p>
+<div class="description">
+&nbsp;<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>5:17</p></div>
+<div class="td right"><p>3.35</p></div>
+<div class="td right"><p>12.60%</p></div>
+<div class="td right"><p>1,877,907</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">19</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/jd.com">Jd.com</a>
+</p>
+<div class="description">
+京东商城是中国最大的综合网络零售商，是中国电子商务领域最受消费者欢迎和最具有影响力的电子商务网站之一，在线销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品、在线旅游等12大类数<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">万个品牌百万种优质商品。2012年第一季度，京东商城以50.1%的市场占有率在中国自主经营式B2C网站中排名第一<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>4:40</p></div>
+<div class="td right"><p>5.37</p></div>
+<div class="td right"><p>1.80%</p></div>
+<div class="td right"><p>12,829</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">20</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/sina.com.cn">Sina.com.cn</a>
+</p>
+<div class="description">
+China's famouse IM provider.<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>3:31</p></div>
+<div class="td right"><p>3.47</p></div>
+<div class="td right"><p>7.40%</p></div>
+<div class="td right"><p>61,098</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">21</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/weibo.com">Weibo.com</a>
+</p>
+<div class="description">
+新浪微博是全中国最主流，最具人气，当前最火爆的微博产品。用一句话随意记录生活，用手机随时随地发微博，迅速获取最热最火最快最酷最新的资讯。<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>5:53</p></div>
+<div class="td right"><p>4.69</p></div>
+<div class="td right"><p>4.10%</p></div>
+<div class="td right"><p>126,143</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">22</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/360.cn">360.cn</a>
+</p>
+<div class="description">
+&nbsp;<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>3:33</p></div>
+<div class="td right"><p>3.80</p></div>
+<div class="td right"><p>0.60%</p></div>
+<div class="td right"><p>23,687</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">23</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/google.de">Google.de</a>
+</p>
+<div class="description">
+Suche im gesamten Web, in deutschsprachigen sowie in deutschen Sites. Zusätzlich kann gezielt n<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">ach Bildern, Videos und News gesucht werden.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>5:55</p></div>
+<div class="td right"><p>10.13</p></div>
+<div class="td right"><p>0.40%</p></div>
+<div class="td right"><p>77,560</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">24</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/google.co.uk">Google.co.uk</a>
+</p>
+<div class="description">
+Enables users to search the world's information, including webpages, images, and videos. Offers<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder"> unique features and search technology.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>7:34</p></div>
+<div class="td right"><p>12.23</p></div>
+<div class="td right"><p>0.90%</p></div>
+<div class="td right"><p>76,326</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">25</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/google.com.br">Google.com.br</a>
+</p>
+<div class="description">
+Site de busca que foca seus resultados no Brasil e a nível internacional tanto em português com<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">o em inglês.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>8:18</p></div>
+<div class="td right"><p>10.71</p></div>
+<div class="td right"><p>0.30%</p></div>
+<div class="td right"><p>36,191</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">26</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/list.tmall.com">List.tmall.com</a>
+</p>
+<div class="description">
+&nbsp;<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>5:23</p></div>
+<div class="td right"><p>1.02</p></div>
+<div class="td right"><p>0.50%</p></div>
+<div class="td right"><p>359</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">27</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/google.fr">Google.fr</a>
+</p>
+<div class="description">
+Version française du moteur de recherche. Propose des outils et des services pour les internautes.<span class="remainder">es.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>6:45</p></div>
+<div class="td right"><p>11.49</p></div>
+<div class="td right"><p>2.00%</p></div>
+<div class="td right"><p>53,446</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">28</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/linkedin.com">Linkedin.com</a>
+</p>
+<div class="description">
+A networking tool to find connections to recommended job candidates, industry experts and busin<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">ess partners. Allows registered users to maintain a list of contact details of people they know and trust in business.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>5:31</p></div>
+<div class="td right"><p>4.35</p></div>
+<div class="td right"><p>19.50%</p></div>
+<div class="td right"><p>1,923,225</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">29</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/google.ru">Google.ru</a>
+</p>
+<div class="description">
+Русскоязычная версия поискового сервера.<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>6:21</p></div>
+<div class="td right"><p>9.58</p></div>
+<div class="td right"><p>0.40%</p></div>
+<div class="td right"><p>37,761</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">30</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/yandex.ru">Yandex.ru</a>
+</p>
+<div class="description">
+Поиск информации в интернете с учетом русской морфологии, возможность регионального уточнения. <span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">Параллельный поиск по новостям, картинкам, товарам, блогам, адресам организаций.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>4:57</p></div>
+<div class="td right"><p>3.39</p></div>
+<div class="td right"><p>2.30%</p></div>
+<div class="td right"><p>349,167</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">31</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/google.it">Google.it</a>
+</p>
+<div class="description">
+Versione italiana del popolare motore e directory. Utilizza inoltre i dati di ODP.<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>6:49</p></div>
+<div class="td right"><p>11.29</p></div>
+<div class="td right"><p>0.40%</p></div>
+<div class="td right"><p>55,245</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">32</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/netflix.com">Netflix.com</a>
+</p>
+<div class="description">
+Flat monthly fee streaming TV and movies service.<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>2:10</p></div>
+<div class="td right"><p>1.80</p></div>
+<div class="td right"><p>8.10%</p></div>
+<div class="td right"><p>19,134</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">33</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/google.com.hk">Google.com.hk</a>
+</p>
+<div class="description">
+谷歌搜索在中国的官方网站。<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>6:32</p></div>
+<div class="td right"><p>7.62</p></div>
+<div class="td right"><p>0.90%</p></div>
+<div class="td right"><p>9,963</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">34</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/google.es">Google.es</a>
+</p>
+<div class="description">
+Buscador que enfoca sus resultados para este país y a nivel internacional tanto en castellano, <span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">catalán, gallego, euskara e inglés.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>6:27</p></div>
+<div class="td right"><p>11.27</p></div>
+<div class="td right"><p>2.30%</p></div>
+<div class="td right"><p>66,124</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">35</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/yahoo.co.jp">Yahoo.co.jp</a>
+</p>
+<div class="description">
+Japanese version of popular portal site.<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>9:58</p></div>
+<div class="td right"><p>8.62</p></div>
+<div class="td right"><p>18.80%</p></div>
+<div class="td right"><p>118,314</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">36</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/google.com.mx">Google.com.mx</a>
+</p>
+<div class="description">
+Buscador internacional que da preferencia a resultados mexicanos.<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>8:54</p></div>
+<div class="td right"><p>10.40</p></div>
+<div class="td right"><p>0.50%</p></div>
+<div class="td right"><p>10,630</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">37</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/pornhub.com">Pornhub.com</a>
+</p>
+<div class="description">
+Please contact dice[/at/]pornhub[/dot/]com for any inquiries.<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>8:15</p></div>
+<div class="td right"><p>3.12</p></div>
+<div class="td right"><p>25.80%</p></div>
+<div class="td right"><p>14,820</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">38</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/google.ca">Google.ca</a>
+</p>
+<div class="description">
+&nbsp;<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>7:14</p></div>
+<div class="td right"><p>11.08</p></div>
+<div class="td right"><p>0.30%</p></div>
+<div class="td right"><p>47,905</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">39</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/bing.com">Bing.com</a>
+</p>
+<div class="description">
+Search engine developed by Microsoft. Features web, image, video, local, news, and product search.<span class="remainder">ch.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>2:36</p></div>
+<div class="td right"><p>3.03</p></div>
+<div class="td right"><p>4.10%</p></div>
+<div class="td right"><p>92,572</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">40</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/twitch.tv">Twitch.tv</a>
+</p>
+<div class="description">
+Platform that allows players to livestream their video game play and viewers can chat in real-t<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">ime. Also offers recorded broadcasts. Lists channels by game name and viewer counts.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>5:46</p></div>
+<div class="td right"><p>2.83</p></div>
+<div class="td right"><p>5.10%</p></div>
+<div class="td right"><p>28,783</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">41</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/t.co">T.co</a>
+</p>
+<div class="description">
+&nbsp;<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>0:46</p></div>
+<div class="td right"><p>2.49</p></div>
+<div class="td right"><p>3.20%</p></div>
+<div class="td right"><p>133,741</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">42</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/xvideos.com">Xvideos.com</a>
+</p>
+<div class="description">
+Streaming high and standard definition movies. Categories include hardcore, 'punish' porn, publ<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">ic sex, BBW, ethnic and shemale.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>12:21</p></div>
+<div class="td right"><p>9.83</p></div>
+<div class="td right"><p>32.00%</p></div>
+<div class="td right"><p>13,452</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">43</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/ebay.com">Ebay.com</a>
+</p>
+<div class="description">
+International person to person auction site, with products sorted into categories.<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>9:43</p></div>
+<div class="td right"><p>7.81</p></div>
+<div class="td right"><p>21.30%</p></div>
+<div class="td right"><p>174,023</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">44</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/alipay.com">Alipay.com</a>
+</p>
+<div class="description">
+Launched in 2004, Alipay is China's leading third-party online payment solution, providing an e<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">asy, safe and secure way for millions of individuals and businesses to make and receive payments on the Internet. It had more than 650 million registered accounts by December 2011. On November 11, 2011, Alipay processed a total number of 33.69 million transactions, setting a record of the highest number of transactions facilitated via an online payment platform during a 24-hour period. The preferred online payment tool of Internet merchants in China, Alipay provides an escrow payment service that reduces transaction risk for online consumers. It partners with more than 100 financial institutions to facilitate payments in China and abroad. It provides payment solutions for 460,000 merchants. It also offers an online payment solution to help merchants worldwide sell directly to consumers in China and supports transactions in 12 major foreign currencies. Alipay is an affiliate of Alibaba Group.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>2:37</p></div>
+<div class="td right"><p>3.52</p></div>
+<div class="td right"><p>0.70%</p></div>
+<div class="td right"><p>6,695</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">45</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/imgur.com">Imgur.com</a>
+</p>
+<div class="description">
+Imgur is the Internet's visual storytelling community.<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>2:38</p></div>
+<div class="td right"><p>3.31</p></div>
+<div class="td right"><p>10.60%</p></div>
+<div class="td right"><p>169,159</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">46</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/msn.com">Msn.com</a>
+</p>
+<div class="description">
+Portal for shopping, news and money, e-mail, search, and chat.<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>6:19</p></div>
+<div class="td right"><p>3.08</p></div>
+<div class="td right"><p>3.50%</p></div>
+<div class="td right"><p>154,392</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">47</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/ok.ru">Ok.ru</a>
+</p>
+<div class="description">
+Соціальна мережа, яка дозволяє знайти однокласників, випускників, однокурсників і просто нових <span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">та старих друзів, а також відновити та підтримувати зв’язок з ними.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>4:55</p></div>
+<div class="td right"><p>2.12</p></div>
+<div class="td right"><p>6.10%</p></div>
+<div class="td right"><p>61,079</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">48</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/wordpress.com">Wordpress.com</a>
+</p>
+<div class="description">
+Free blogs managed by the developers of the WordPress software. Includes custom design template<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder">s, integrated statistics, automatic spam protection and other features.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>2:38</p></div>
+<div class="td right"><p>1.98</p></div>
+<div class="td right"><p>53.00%</p></div>
+<div class="td right"><p>74,019</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">49</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/office.com">Office.com</a>
+</p>
+<div class="description">
+Online business resource with industry-specific news and analysis, tools and access to relevant<span class='trucate'>&hellip;<a class='moreDesc'>More</a></span><span class="remainder"> services.<span class='trucate'>&nbsp;<a class='lessDesc'>Less</a></span></span>
+</div>
+</div>
+<div class="td right"><p>3:31</p></div>
+<div class="td right"><p>2.27</p></div>
+<div class="td right"><p>13.30%</p></div>
+<div class="td right"><p>8,983</p></div>
+</div>
+<div class="tr site-listing">
+<div class="td number">50</div>
+<div class="td DescriptionCell">
+<p class="">
+<a href="/siteinfo/microsoft.com">Microsoft.com</a>
+</p>
+<div class="description">
+Main site for product information, support, and news.<span class="remainder"></span>
+</div>
+</div>
+<div class="td right"><p>3:02</p></div>
+<div class="td right"><p>2.56</p></div>
+<div class="td right"><p>40.90%</p></div>
+<div class="td right"><p>505,445</p></div>
+</div>
+</div>
+<p class="pages">Showing 50 of 500 results</p>
+<div class="row-fluid TopSitesAd">
+<div class="left">Want access to the complete list?</div>
+<div class="right"><a href="/plans">TRY 7 DAYS FREE</a></div>
+</div>            <a class="apilink"  href="https://aws.amazon.com/alexa-top-sites/"> More extensive lists of top sites by country or globally are available programmatically through the Alexa Top Sites service  </a>
+</div>
+</div>
+</span>
+</span>
+</section>
+</div>
+</div>
+</section>
+<footer id="alx-footer" class="alx-footer font-1">
+<div class="Contained">
+<section id="footer-content" class="footer-content row-fluid">
+<div class="span3">
+<a class="title footer-link" href="https://try.alexa.com/marketing-stack/seo-tools">SEO Tools</a>
+<ul class="">
+<li><a class='footer-link' href="https://try.alexa.com/marketing-stack/keyword-difficulty-tool">Keyword Difficulty Tool</a></li>
+<li><a class='footer-link' href="https://try.alexa.com/marketing-stack/competitor-keyword-matrix">Competitor Keyword Matrix</a></li>
+<li><a class='footer-link' href="https://try.alexa.com/marketing-stack/on-page-seo-checker">On-Page SEO Checker</a></li>
+<li><a class='footer-link' href='https://try.alexa.com/marketing-stack/competitor-backlink-checker'>Competitor Backlink Checker</a></li>
+<li><a class='footer-link' href="https://try.alexa.com/marketing-stack/seo-audit-tool">SEO Audit Tool</a></li>
+</ul>
+</div>
+<div class="span4">
+<a class="title footer-link" href="https://try.alexa.com/marketing-stack/competitive-analysis-tools">Competitive Analysis Tools</a>
+<ul class="">
+<li><a class='footer-link' href="https://try.alexa.com/marketing-stack/audience-overlap-tool">Audience Overlap Tool</a></li>
+<li><a class='footer-link' href='https://try.alexa.com/marketing-stack/site-comparisons'>Site Comparisons</a></li>
+<li><a class='footer-link' href="/siteinfo">Website Traffic Statistics</a></li>
+<li><a class='footer-link' href="/find-similar-sites">Find Similar Sites</a></li>
+<li><a class='footer-link' href="/topsites">Top Sites</a></li>
+<li><a class='footer-link' href="/toolbar">Alexa Browser Extension</a></li>
+<li><a class='footer-link' href="https://aws.amazon.com/alexa/">API</a></li>
+</ul>
+</div>
+<div class="span3">
+<p class="title footer-link">Marketing Resources</p>
+<ul>
+<li><a class='footer-link' href='https://try.alexa.com/resources'>eBooks</a></li>
+<li><a class='footer-link' href='https://try.alexa.com/alexa-tutorials/'>Video Tutorials</a></li>
+<li><a class='footer-link' href='http://blog.alexa.com/'>Blog</a></li>
+</div>
+<div class="span2">
+<p class="title">Company</p>
+<ul>
+<li><a class='footer-link' href="/about">About</a></li>
+<li><a class='footer-link' href="/about/management">Team</a></li>
+<li><a class='footer-link' href="/about/careers">Careers</a></li>
+<li><a class='footer-link' href="/plans">Pricing</a></li>
+<li><a class='footer-link' href="/support">Support</a></li>
+<li><a class='footer-link' href="/contact-us">Contact Us</a></li>
+</div>
+</section>
+</div>
+<section id="footer-legal" class="footer-legal loggedout">
+<div class="Contained">
+<span class="row-fluid">
+<section id="footer-copy" class="span8 footer-copy">
+<span>&copy; Alexa Internet, Inc. 1996 - 2017</span><a href="/help/privacy">Privacy</a><a href="/help/terms">Terms</a>
+</section>
+<section id="footer-terms" class="span4 align-right footer-social">
+<a href="https://www.facebook.com/alexainternet" target="_blank" class="fa fa-facebook footer-link">
+</a>
+<a href="https://twitter.com/alexainternet" target="_blank" class="fa fa-twitter footer-link">
+</a>
+<a href="https://www.linkedin.com/company/alexa-internet" target="_blank" class="fa fa-linkedin footer-link">
+</a>
+</section>
+<section class="mobile-legal">
+<div class="row-fluid">
+<div class="half"><a class='footer-link' href="https://aws.amazon.com/alexa/">API</a></div>
+<div class="half"><a class='footer-link' href="/contact-us">Contact Us</a></div>
+</div>
+<div class="row-fluid">
+<div class="half"><a class='footer-link' href="/help/privacy">Privacy</a></div>
+<div class="half"><a class='footer-link' href="/help/terms">Terms</a></div>
+</div>
+<div class="row-fluid" style="text-align:center; color:#667fa7; padding:10px 0; border-bottom:none;">&copy; Alexa Internet, Inc. 1996 - 2017</div>
+</section>
+</span>
+</div>
+<div style="clear:both;height:0px"></div>
+</section>
+</footer>
+</div>
+</div>
+<div id="ToolMenu" class="modal hide fade stay navmodals" tabindex="-1" data-keyboard="false" data-backdrop="static" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display:none;">
+<h3 class="popmenu">Tools</h3>
+<div class='navScrollableCtnr'>
+<div class='NavScrollable'>
+<span class="BigItem "><span class='ppoverdl img-lock img-lock-fa onclick liPopover '  data-ppoverdl='Audits'>Site Audits </span><span class='ppover img-lock img-lock-fa onclick liPopover ' data-placement='right' data-ppover='Audits'>Site Audits </span><div id="Audits" data-title='Upgrade to View' class='hide-elem'><p class="mg-btm">Site Audits are available in the Alexa Pro Advanced Plans.</p>
+<a href="/plans?ax_atid=" class="btn btn-p2 ppover-close">Upgrade</a>
+</div></span>
+<div class="BigItem">
+<p class='SidenavMenuDropDown' data-navsection="seo_tools">SEO Tools <i class='fa fa-plus'></i></p>
+<ul class='SideNavDropDown' style='display:none'>
+<li class=""><span class='ppoverdl img-lock img-lock-fa onclick liPopover '  data-ppoverdl='matrix'>Competitor Keyword Matrix </span><span class='ppover img-lock img-lock-fa onclick liPopover ' data-placement='right' data-ppover='matrix'>Competitor Keyword Matrix </span><div id="matrix" data-title='Upgrade to View' class='hide-elem'><p class="mg-btm">The Competitor Keyword Matrix is available in the Alexa Pro Advanced Plans.</p>
+<a href="/plans?ax_atid=" class="btn btn-p2 ppover-close">Upgrade</a>
+</div></li>
+<li class=""><span class='ppoverdl img-lock img-lock-fa onclick liPopover '  data-ppoverdl='backlinks'>Competitor Backlink Checker </span><span class='ppover img-lock img-lock-fa onclick liPopover ' data-placement='right' data-ppover='backlinks'>Competitor Backlink Checker </span><div id="backlinks" data-title='Upgrade to View' class='hide-elem'><p class="mg-btm">The Competitor Backlink Checker is available in the Alexa Pro Advanced Plans.</p>
+<a href="/plans?ax_atid=" class="btn btn-p2 ppover-close">Upgrade</a>
+</div></li>
+<li class=""><span class='ppoverdl img-lock img-lock-fa onclick liPopover '  data-ppoverdl='keyop'>Keyword Difficulty Tool </span><span class='ppover img-lock img-lock-fa onclick liPopover ' data-placement='right' data-ppover='keyop'>Keyword Difficulty Tool </span><div id="keyop" data-title='Upgrade to View' class='hide-elem'><p class="mg-btm">The Keyword Difficulty Tool is available in the Alexa Pro Advanced Plans.</p>
+<a href="/plans?ax_atid=" class="btn btn-p2 ppover-close">Upgrade</a>
+</div></li>
+<li class=""><span class='ppoverdl img-lock img-lock-fa onclick liPopover '  data-ppoverdl='keywordQuery'>Keyword Share of Voice </span><span class='ppover img-lock img-lock-fa onclick liPopover ' data-placement='right' data-ppover='keywordQuery'>Keyword Share of Voice </span><div id="keywordQuery" data-title='Upgrade to View' class='hide-elem'><p class="mg-btm">Keyword Share of Voice is available in the Alexa Pro Advanced Plans.</p>
+<a href="/plans?ax_atid=" class="btn btn-p2 ppover-close">Upgrade</a>
+</div></li>
+<li class=""><span class='ppoverdl img-lock img-lock-fa onclick liPopover '  data-ppoverdl='cop'>On-Page SEO Checker </span><span class='ppover img-lock img-lock-fa onclick liPopover ' data-placement='right' data-ppover='cop'>On-Page SEO Checker </span><div id="cop" data-title='Upgrade to View' class='hide-elem'><p class="mg-btm">The On-Page SEO Checker is available in the Alexa Pro Advanced Plans.</p>
+<a href="/plans?ax_atid=" class="btn btn-p2 ppover-close">Upgrade</a>
+</div></li>
+</ul>
+</div>
+<div class="BigItem">
+<p class='SidenavMenuDropDown' data-navsection="competitive_analysis">Competitive Analysis <i class='fa fa-plus'></i></p>
+<ul class='SideNavDropDown' style='display:none'>
+<li class=""><a data-widget="ignore" href="/siteinfo">Site Overview</a></li>
+<li class=""><span class='ppoverdl img-lock img-lock-fa onclick liPopover '  data-ppoverdl='comparison'>Site Comparisons </span><span class='ppover img-lock img-lock-fa onclick liPopover ' data-placement='right' data-ppover='comparison'>Site Comparisons </span><div id="comparison" data-title='Upgrade to View' class='hide-elem'><p class="mg-btm">The Site Comparisons is available in the Alexa Pro Advanced Plans.</p>
+<a href="/plans?ax_atid=" class="btn btn-p2 ppover-close">Upgrade</a>
+</div></li>
+<li class=""><span class='ppoverdl img-lock img-lock-fa onclick liPopover '  data-ppoverdl='overlap'>Audience Overlap Tool </span><span class='ppover img-lock img-lock-fa onclick liPopover ' data-placement='right' data-ppover='overlap'>Audience Overlap Tool </span><div id="overlap" data-title='Upgrade to View' class='hide-elem'><p class="mg-btm">The Audience Overlap Tool is available in the Alexa Pro Advanced Plans.</p>
+<a href="/plans?ax_atid=" class="btn btn-p2 ppover-close">Upgrade</a>
+</div></li>
+<li class=""><span class='ppoverdl img-lock img-lock-fa onclick liPopover '  data-ppoverdl='linksin'>Sites Linking In </span><span class='ppover img-lock img-lock-fa onclick liPopover ' data-placement='right' data-ppover='linksin'>Sites Linking In </span><div id="linksin" data-title='Upgrade to View' class='hide-elem'><p class="mg-btm">Sites Linking In is available in the Alexa Pro Advanced Plans.</p>
+<a href="/plans?ax_atid=" class="btn btn-p2 ppover-close">Upgrade</a>
+</div></li>
+<li class=""><span class='ppoverdl img-lock img-lock-fa onclick liPopover '  data-ppoverdl='keywords'>Site Keywords </span><span class='ppover img-lock img-lock-fa onclick liPopover ' data-placement='right' data-ppover='keywords'>Site Keywords </span><div id="keywords" data-title='Upgrade to View' class='hide-elem'><p class="mg-btm">Site Keywords are available in the Alexa Pro Advanced Plans.</p>
+<a href="/plans?ax_atid=" class="btn btn-p2 ppover-close">Upgrade</a>
+</div></li>
+<li class=""><span class='ppoverdl img-lock img-lock-fa onclick liPopover '  data-ppoverdl='FindSites'>Sites Screener </span><span class='ppover img-lock img-lock-fa onclick liPopover ' data-placement='right' data-ppover='FindSites'>Sites Screener </span><div id="FindSites" data-title='Upgrade to View' class='hide-elem'><p class="mg-btm">Sites Screener is available in the Alexa Pro Advanced Plans.</p>
+<a href="/plans?ax_atid=" class="btn btn-p2 ppover-close">Upgrade</a>
+</div></li>
+<li class="current"><a href='/topsites'>Top Sites</a></li>
+<li class=""><a href='/toolbar'>Alexa Browser Extension</a></li>
+</ul>
+</div>
+<div class="BigItem">
+<p class='SidenavMenuDropDown' data-navsection="your_site">Site Metrics <i class='fa fa-plus'></i></p>
+<li><a href='/siteinfo'>Site Metrics</a></li>
+</div>
+</div>
+</div>
+</div>
+<div id="ProfileMenu" class="modal hide fade navmodals" tabindex="-1" data-keyboard="false" data-backdrop="static" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display:none;">
+<h3 class="popmenu">Account</h3>
+<a href='#' class='ModalNavxout hidden-phone' data-dismiss='modal'><i class='fa fa-times' aria-hidden='true'></i></a>
+<div class='paddingAll mybuttons' style='text-align: right;'>
+<a href='#' class='SideNavToggle hidden-phone'><i class='fa fa-bars SideNavClose' aria-hidden='true'></i></a>
+<a href='#' class='SideNavToggle hidden-desktop hidden-tablet'><i class='fa fa-times MobileSideNavClose' aria-hidden='true'></i></a>
+</div>
+<hr/>
+<div class='MenuBlock'>
+<h4><a href='/account'>Account Management</a></h4>
+<h4><a href='/account/paymenthistory'>Payment History</a></h4>
+<h4><a href='/logout?mode=logout'>Log Out</a></h4>
+</div>
+</div>
+<script type="text/javascript" src="/js/ext/URI.js?1508445104"></script>
+<script type="text/javascript" src="/js/ext/jquery-ui.js?1508445104"></script>
+<script type="text/javascript" src="/js/ext/jquery-ui-touch-punch-023.js?1508445104"></script>
+<script type="text/javascript" src="/pro/js/ext/jquery-validate-min.js?1508445104"></script>
+<script type="text/javascript" src="/js/ext/jquery-cookie-13.js?1508445104"></script>
+<script type="text/javascript" src="/js/ext/jquery-autocomplete.js?1508445104"></script>
+<script type="text/javascript" src="/js/ext/bootstrap.js?1508445104"></script>
+<script type="text/javascript" src="/js/ext/mobile-util-min.js?1508445104"></script>
+<script type="text/javascript" src="/js/common.js?1508876829"></script>
+<script type="text/javascript" src="/js/Alexa.js?1508876829"></script>
+<script type="text/javascript" src="/js/alexa-ui.js?1508876829"></script>
+<script type="application/json" id="widgetAccess">
+[]
+</script><script type="text/javascript">
+if('1') {
+A$.isProd = true;
+} else {
+A$.isProd = false;
+}
+if('') {
+A$.useCF = true;
+} else {
+A$.useCF = false;
+}
+</script>	</body>
+</html>
