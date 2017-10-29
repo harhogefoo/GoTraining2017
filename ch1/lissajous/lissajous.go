@@ -48,6 +48,4 @@ func lissajous(out io.Writer) {
 		anim.Image = append(anim.Image, img)
 	}
 	gif.EncodeAll(out, &anim) // 注意: エンコードエラーを無視
-
-
 }
