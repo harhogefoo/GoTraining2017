@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"fmt"
 	"github.com/harhogefoo/go_training2017/ch2/tempconv"
-	"github.com/harhogefoo/go_training2017/ch2/practice/2_2/lengthconv"
-	"github.com/harhogefoo/go_training2017/ch2/practice/2_2/weightconv"
+	"github.com/harhogefoo/go_training2017/ex2/lengthconv"
+	"github.com/harhogefoo/go_training2017/ex2/weightconv"
 )
 
 func main() {
