@@ -1,5 +1,5 @@
 // Echo1は、そのコマンドライン引数を表示します。
-package main
+package ex02
 
 import (
 	"fmt"
