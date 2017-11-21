@@ -1,30 +1,47 @@
 // Echo1は、そのコマンドライン引数を表示します。
-package ex03
+package main
 
 import (
-	"fmt"
 	"strings"
 	"time"
+	"io"
+	"fmt"
+	"os"
 )
 
-func main() {
-	array := make([]string, 10000)
-	for i := 0; i < len(array); i++ {
-		array[i] = "hogehoge"
-	}
+var out io.Writer = os.Stdout
 
-	// +=
+func plusEqual(array []string) float64 {
 	start := time.Now()
 	var output string
 	for i := 0; i < len(array); i++ {
 		output += array[i]
 	}
-	// fmt.Println(output)
-	fmt.Printf("%.10fs elapsed\n", time.Since(start).Seconds())
+	seconds := time.Since(start).Seconds()
+	fmt.Fprintf(out,"%.10fs elapsed\n", seconds)
+	return seconds
+}
 
+func join(array []string) float64 {
+	start := time.Now()
+	strings.Join(array, "")
+	seconds := time.Since(start).Seconds()
+	fmt.Fprintf(out,"%.10fs elapsed\n", seconds)
+	return seconds
+}
+
+func createArray() []string {
+	array := make([]string, 10000)
+	for i := 0; i < len(array); i++ {
+		array[i] = "hogehoge"
+	}
+	return array
+}
+
+func main() {
+	array := createArray()
+	// +=
+	plusEqual(array)
 	// Join
-	start = time.Now()
-	output = strings.Join(array, "")
-	// fmt.Println(output)
-	fmt.Printf("%.10fs elapsed\n", time.Since(start).Seconds())
+	join(array)
 }

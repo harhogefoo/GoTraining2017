@@ -52,7 +52,7 @@ func countLines(f *os.File, counts map[string]int, dupFiles map[string][]string)
 			dupFiles[text] = append(dupFiles[text], f.Name())
 		}
 	}
-	// 注意: input.Err()からのエラーの可能性を蒸ししている
+	// 注意: input.Err()からのエラーの可能性を無視している
 }
 
 func arrayContains(arr []string, str string) bool {

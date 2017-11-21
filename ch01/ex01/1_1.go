@@ -5,8 +5,14 @@ import (
 	"fmt"
 	"os"
 	"strings"
+	"io"
 )
 
+var out io.Writer = os.Stdout // テスト中は変更される
+
+func printArgs(args []string) {
+	fmt.Fprintln(out, strings.Join(args, " "))
+}
 func main() {
-	fmt.Println(strings.Join(os.Args, " "))
+	print(os.Args)
 }

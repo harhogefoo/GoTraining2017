@@ -1,13 +1,21 @@
 // Echo1は、そのコマンドライン引数を表示します。
-package ex02
+package main
 
 import (
 	"fmt"
 	"os"
+	"io"
 )
 
-func main() {
-	for i := 0; i < len(os.Args); i++ {
-		fmt.Printf("%d: %s\n", i, os.Args[i])
+
+var out io.Writer = os.Stdout // テスト中は変更される
+
+func printArgsWithVerbose(args []string) {
+	for i := 0; i < len(args); i++ {
+		fmt.Fprintf(out, "%d: %s\n", i, args[i])
 	}
+}
+
+func main() {
+	printArgsWithVerbose(os.Args)
 }
