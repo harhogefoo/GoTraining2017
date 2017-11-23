@@ -1,13 +1,13 @@
 // cfは、その数値引数を摂氏と華氏へ変換します
-package main
+package ex02
 
 import (
 	"os"
 	"strconv"
 	"fmt"
-	"github.com/harhogefoo/go_training2017/ch2/tempconv"
-	"github.com/harhogefoo/go_training2017/ex2/lengthconv"
-	"github.com/harhogefoo/go_training2017/ex2/weightconv"
+	"github.com/harhogefoo/go_training2017/ch02/ex02/lengthconv"
+	"github.com/harhogefoo/go_training2017/ch02/ex02/weightconv"
+	"github.com/harhogefoo/go_training2017/ch02/ex02/tempconv"
 )
 
 func main() {
