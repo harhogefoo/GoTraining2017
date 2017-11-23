@@ -6,40 +6,47 @@ import (
 	"fmt"
 	"os"
 	"strings"
+	"io"
 )
 
+var out io.Writer = os.Stdout
+
 func main() {
-	if !hasArgs() {
-		fmt.Println("usage: go run 1_4.go filename1 filename2 ... ")
+	exec(os.Args)
+}
+
+func exec(args []string) {
+	if !hasArgs(args) {
+		fmt.Fprintln(out,"usage: go run 1_4.go filename1 filename2 ... ")
 		return
 	}
 	counts := make(map[string]int)
 	dupFiles := make(map[string][]string)
 
-	files := os.Args[1:]
-	if len(files) == 0 {
-		countLines(os.Stdin, counts, dupFiles)
-	} else {
-		for _, arg := range files {
-			f, err := os.Open(arg)
-			if err != nil {
-				fmt.Fprintf(os.Stderr, "dup2: %v\n", err)
-				continue
-			}
-			countLines(f, counts, dupFiles)
-			f.Close()
-		}
+	files := args[1:]
+	for _, fileName := range files {
+		f := openFile(fileName)
+		countLines(f, counts, dupFiles)
+		f.Close()
 	}
 
 	for line, n := range counts {
 		if n > 1 {
-			fmt.Printf("%d\t%s\t%s\n", n, line, strings.Join(dupFiles[line], ","))
+			fmt.Fprintf(out,"%d\t%s\t%s\n", n, line, strings.Join(dupFiles[line], ","))
 		}
 	}
 }
 
-func hasArgs() bool {
-	return len(os.Args) < 1
+func hasArgs(args []string) bool {
+	return len(args) > 1
+}
+
+func openFile(fileName string) *os.File {
+	f, err := os.Open(fileName)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "1_4: %v\n", err)
+	}
+	return f
 }
 
 func countLines(f *os.File, counts map[string]int, dupFiles map[string][]string) {
@@ -55,6 +62,7 @@ func countLines(f *os.File, counts map[string]int, dupFiles map[string][]string)
 	// 注意: input.Err()からのエラーの可能性を無視している
 }
 
+// 配列に特定の文字列が入っていればtrue, そうでなければfalse
 func arrayContains(arr []string, str string) bool {
 	for _, v := range arr {
 		if v == str {

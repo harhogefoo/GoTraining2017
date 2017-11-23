@@ -19,13 +19,6 @@ var palette = []color.Color {
 	color.RGBA{0, 0, 255, 255},
 }
 
-const (
-	whiteIndex = 0
-	redIndex = 1
-	greenIndex = 2
-	blueIndex = 3
-)
-
 func main() {
 	rand.Seed(time.Now().UTC().UnixNano())
 	lissajous(os.Stdout)
@@ -55,6 +48,4 @@ func lissajous(out io.Writer) {
 		anim.Image = append(anim.Image, img)
 	}
 	gif.EncodeAll(out, &anim) // 注意: エンコードエラーを無視
-
-
 }

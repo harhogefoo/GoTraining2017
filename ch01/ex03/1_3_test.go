@@ -1,4 +1,3 @@
-// Echo1は、そのコマンドライン引数を表示します。
 package main
 
 import (

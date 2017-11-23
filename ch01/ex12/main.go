@@ -46,7 +46,7 @@ func lissajous(out io.Writer, r *http.Request) {
 		log.Print(err)
 	}
 	fCycles, isExist := r.Form["cycles"] // 発振器xが完了する周回の回数
-	cycles := 5.0
+	cycles := 20.0
 	if isExist {
 		cycles, _ = strconv.ParseFloat(fCycles[0], 64)
 	}
