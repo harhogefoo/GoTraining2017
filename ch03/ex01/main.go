@@ -1,3 +1,6 @@
+/*
+ * 不正なポリゴンをスキップする
+ */
 package main
 
 import (
@@ -26,7 +29,12 @@ func main() {
 			bx, by := corner(i, j)
 			cx, cy := corner(i, j+1)
 			dx, dy := corner(i+1, j+1)
-			fmt.Printf("<polygon points='%g,%g %g,%g %g,%g %g,%g'/>\n", ax, ay, bx, by, cx, cy, dx, dy)
+			if isFinite(ax) && isFinite(ay) &&
+				isFinite(bx) && isFinite(by) &&
+				isFinite(cx) && isFinite(cy) &&
+				isFinite(dx) && isFinite(dy) {
+				fmt.Printf("<polygon points='%g,%g %g,%g %g,%g %g,%g'/>\n", ax, ay, bx, by, cx, cy, dx, dy)
+			}
 		}
 	}
 	fmt.Println("</svg>")
@@ -44,4 +52,8 @@ func corner(i, j int) (float64, float64) {
 func f(x, y float64) float64 {
 	r := math.Hypot(x, y)
 	return math.Sin(r) / r
+}
+
+func isFinite(f float64) bool {
+	return !math.IsInf(f, 0)
 }

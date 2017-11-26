@@ -1,4 +1,4 @@
-package ex01
+package tempconv
 
 import "fmt"
 

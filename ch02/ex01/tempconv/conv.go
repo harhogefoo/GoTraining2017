@@ -1,4 +1,4 @@
-package ex01
+package tempconv
 
 // CtoF は摂氏の温度を華氏へ変換します。
 func CToF(c Celsius) Fahrenheit { return Fahrenheit(c * 9 / 5 + 32) }

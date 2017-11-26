@@ -4,6 +4,7 @@ package ex01
 import (
 	"fmt"
 	"testing"
+	"github.com/harhogefoo/go_training2017/ch02/ex01/tempconv"
 )
 
 type Tests struct {
@@ -35,7 +36,7 @@ func getKelvin() []Tests {
 func TestCelsius_String(t *testing.T) {
 	for _, test := range getCelsius() {
 		description := fmt.Sprintf("tempconv(%q", test.num)
-		c := Celsius(test.num)
+		c := tempconv.Celsius(test.num)
 		if c.String() != test.want {
 			t.Errorf("%s = %q, want %q)", description, c, test.want)
 		}
@@ -45,7 +46,7 @@ func TestCelsius_String(t *testing.T) {
 func TestFahrenheit_String(t *testing.T) {
 	for _, test := range getFahrenheit() {
 		description := fmt.Sprintf("tempconv(%q", test.num)
-		f := Fahrenheit(test.num)
+		f := tempconv.Fahrenheit(test.num)
 		if f.String() != test.want {
 			t.Errorf("%s = %q, want %q)", description, f, test.want)
 		}
@@ -55,7 +56,7 @@ func TestFahrenheit_String(t *testing.T) {
 func TestKelvin_String(t *testing.T) {
 	for _, test := range getKelvin() {
 		description := fmt.Sprintf("tempconv(%q", test.num)
-		k := Kelvin(test.num)
+		k := tempconv.Kelvin(test.num)
 		if k.String() != test.want {
 			t.Errorf("%s = %q, want %q)", description, k, test.want)
 		}
@@ -63,6 +64,10 @@ func TestKelvin_String(t *testing.T) {
 }
 
 func TestCToF(t *testing.T) {
+	if tempconv.CToF(tempconv.BoilingC) != 212.0 {
+		t.Error(fmt.Sprint(tempconv.CToF(tempconv.BoilingC)))
+	}
+
 	var tests = []Tests {
 		{32, "89.6 F"},
 		{10.5, "50.9 F"},
@@ -70,7 +75,7 @@ func TestCToF(t *testing.T) {
 
 	for _, test := range tests {
 		description := fmt.Sprintf("tempconv(%q", test.num)
-		got := CToF(Celsius(test.num))
+		got := tempconv.CToF(tempconv.Celsius(test.num))
 		if got.String() != test.want {
 			t.Errorf("%s = %q, want %q)", description, got, test.want)
 		}
@@ -78,6 +83,9 @@ func TestCToF(t *testing.T) {
 }
 
 func TestCToK(t *testing.T) {
+	if tempconv.CToK(0) != -tempconv.Kelvin(tempconv.AbsoluteZeroC) {
+		t.Error(fmt.Sprint(tempconv.CToK(0)))
+	}
 	var tests = []Tests {
 		{32, "-241.14999999999998 K"},
 		{10.5, "-262.65 K"},
@@ -85,7 +93,7 @@ func TestCToK(t *testing.T) {
 
 	for _, test := range tests {
 		description := fmt.Sprintf("tempconv(%q", test.num)
-		got := CToK(Celsius(test.num))
+		got := tempconv.CToK(tempconv.Celsius(test.num))
 		if got.String() != test.want {
 			t.Errorf("%s = %q, want %q)", description, got, test.want)
 		}
@@ -100,7 +108,7 @@ func TestFToC(t *testing.T) {
 
 	for _, test := range tests {
 		description := fmt.Sprintf("tempconv(%q", test.num)
-		got := FToC(Fahrenheit(test.num))
+		got := tempconv.FToC(tempconv.Fahrenheit(test.num))
 		if got.String() != test.want {
 			t.Errorf("%s = %q, want %q)", description, got, test.want)
 		}
@@ -108,6 +116,9 @@ func TestFToC(t *testing.T) {
 }
 
 func TestKToC(t *testing.T) {
+	if tempconv.KToC(0) != tempconv.AbsoluteZeroC {
+		t.Error(fmt.Sprint(tempconv.KToC(0)))
+	}
 	var tests = []Tests {
 		{32, "-241.14999999999998 C"},
 		{10.5, "-262.65 C"},
@@ -115,15 +126,9 @@ func TestKToC(t *testing.T) {
 
 	for _, test := range tests {
 		description := fmt.Sprintf("tempconv(%q", test.num)
-		got := KToC(Kelvin(test.num))
+		got := tempconv.KToC(tempconv.Kelvin(test.num))
 		if got.String() != test.want {
 			t.Errorf("%s = %q, want %q)", description, got, test.want)
 		}
 	}
 }
-
-
-
-
-
-
