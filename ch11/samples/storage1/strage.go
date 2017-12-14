@@ -12,7 +12,7 @@ func bytesInUse(username string) int64 { return 0 }
 // 注意: ソースコードに決してパスワードを書かないこと！
 const sender = "notifications@example.com"
 const password = "correcthorsebatterystaple"
-const honame = "smtp.example.com"
+const hostname = "smtp.example.com"
 
 const template = `Warning: you are using %d bytes of storage, %d% of your quota.`
 
