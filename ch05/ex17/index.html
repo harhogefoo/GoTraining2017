@@ -1,0 +1,2179 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="theme-color" content="#375EAB">
+	<title>The Go Programming Language Blog</title>
+	<link type="text/css" rel="stylesheet" href="/lib/godoc/style.css">
+	<link type="text/css" rel="stylesheet" href="/fonts.css">
+	<link rel="alternate" type="application/atom+xml" title="blog.golang.org - Atom Feed" href="https://blog.golang.org/feed.atom" />
+	<script type="text/javascript">window.initFuncs = [];</script>
+	<style>
+		#sidebar {
+			float: right;
+			padding-left: 20px;
+			width: 40%;
+			max-width: 250px;
+			background: #F3F3F3;
+			margin: 20px 0 20px 20px;
+		}
+		#sidebar ul {
+			padding: 0;
+		}
+		#sidebar li {
+			list-style-type: none;
+		}
+		#content .author {
+			font-style: italic;
+		}
+		#content .article {
+			margin-bottom: 50px;
+		}
+		#content .date {
+			color: #999;
+		}
+		#content .tags {
+			color: #999;
+			font-size: smaller;
+		}
+		#content .iframe, #content .image {
+			margin: 20px;
+		}
+		#content .title {
+			margin: 20px 0;
+		}
+		#content img {
+			max-width: 100%;
+		}
+		.article[data-slug='/go-fonts'] {
+			font-family: Go, sans-serif;
+		}
+		.article[data-slug='/go-fonts'] pre,
+		.article[data-slug='/go-fonts'] code {
+			font-family: Go Mono, monospace;
+		}
+	</style>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(["_setAccount", "UA-11222381-3"]);
+_gaq.push(["b._setAccount", "UA-49880327-6"]);
+window.trackPageview = function() {
+  _gaq.push(["_trackPageview", location.pathname+location.hash]);
+  _gaq.push(["b._trackPageview", location.pathname+location.hash]);
+};
+window.trackPageview();
+window.trackEvent = function(category, action, opt_label, opt_value, opt_noninteraction) {
+  _gaq.push(["_trackEvent", category, action, opt_label, opt_value, opt_noninteraction]);
+  _gaq.push(["b._trackEvent", category, action, opt_label, opt_value, opt_noninteraction]);
+};
+</script>
+</head>
+<body>
+
+<div id="topbar"><div class="container">
+
+<div class="top-heading" id="heading-wide"><a href="//golang.org/">The Go Programming Language</a></div>
+<div class="top-heading" id="heading-narrow"><a href="//golang.org/">Go</a></div>
+<a href="#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="//golang.org/search">
+<div id="menu">
+<a href="//golang.org/doc/">Documents</a>
+<a href="//golang.org/pkg/">Packages</a>
+<a href="//golang.org/project/">The Project</a>
+<a href="//golang.org/help/">Help</a>
+<a href="/">Blog</a>
+<input type="text" id="search" name="q" class="inactive" value="Search" placeholder="Search">
+</div>
+</form>
+
+</div></div>
+
+<div id="page">
+<div class="container">
+
+<div id="sidebar">
+	
+	
+	<h4>Links</h4>
+	<ul>
+	<li><a href='//golang.org/'>golang.org</a></li>
+	<li><a href='//golang.org/doc/install.html'>Install Go</a></li>
+	<li><a href='//tour.golang.org/'>A Tour of Go</a></li>
+	<li><a href='//golang.org/doc/'>Go Documentation</a></li>
+	<li><a href='//groups.google.com/group/golang-nuts'>Go Mailing List</a></li>
+	<li><a href='//plus.google.com/101406623878176903605'>Go on Google+</a></li>
+	<li><a href='//plus.google.com/112164155169467723645/posts'>Go+ Community</a></li>
+	<li><a href='//twitter.com/golang'>Go on Twitter</a></li>
+	</ul>
+	
+	<p><a href="/index">Blog index</a></p>
+</div>
+
+<div id="content">
+	<h1><a href="/">The Go Blog</a></h1>
+	
+	
+		
+	<div class="article" data-slug="/survey2017">
+		<h3 class="title"><a href="/survey2017">Participate in the 2017 Go User Survey</a></h3>
+		<p class="date">16 November 2017</p>
+		
+
+  
+  
+    
+      
+  <h4 id="TOC_1.">The Go project wants to hear from you (again)!</h4>
+  
+  
+  <p>
+    Last year we conducted the first ever
+
+
+    <a href="https://blog.golang.org/survey2016-results" target="_blank">Go user survey</a>. Thanks to all of you,
+
+
+    it was an overwhelming success with over 3500 responses. The survey provided key insights
+
+
+    and helped us better plan and prioritize.
+  </p>
+  
+
+  
+  <p>
+    We invite you to participate in the <a href="https://goo.gl/n9M7SB" target="_blank">2017 Go User Survey</a>.
+  </p>
+  
+
+
+    
+      
+  <h4 id="TOC_2.">The Go User Survey</h4>
+  
+  
+  <p>
+    <b>Who:</b> If you currently use Go, have used Go in the past, or have any interest in the language,
+
+
+    please help by sharing your feedback to improve Go for you and your fellow
+
+
+    Gophers.
+  </p>
+  
+
+  
+  <p>
+    <b>Where:</b> Please take this 15-minute survey by <b>Friday December 8th</b>: <a href="https://goo.gl/n9M7SB" target="_blank">2017 Go User Survey</a>
+  </p>
+  
+
+  
+  <p>
+    The survey is anonymous and confidential.
+  </p>
+  
+
+  
+  <p>
+    <b>Why:</b> The Go project leadership depends on your feedback to guide the future
+
+
+    of the Go project. Your responses will help to understand what&#39;s going well
+
+
+    and what&#39;s not, as well as help us prioritize improvements for the Go
+
+
+    language, libraries and tools.
+  </p>
+  
+
+  
+  <p>
+    A few weeks after the survey closes, we will publish the anonymous aggregate results to
+
+
+    the Go blog. See the <a href="https://blog.golang.org/survey2016-results" target="_blank">2016 Go user survey results</a>
+
+
+    to learn what insights were gained from last year&#39;s survey.
+  </p>
+  
+
+
+    
+      
+  <h4 id="TOC_3.">Spread the word!</h4>
+  
+  
+  <p>
+    Please help us spread the word by sharing this post on your social network
+
+
+    feeds, at meetups, around your office and in other communities.
+  </p>
+  
+
+
+    
+  
+
+
+		
+			<p class="author">By Steve Francia</p>
+		
+	</div>
+
+	
+		
+	<div class="article" data-slug="/8years">
+		<h3 class="title"><a href="/8years">Eight years of Go</a></h3>
+		<p class="date">10 November 2017</p>
+		
+
+  
+  
+    
+      
+        
+  
+  <p>
+    Today we celebrate 8 years since Go was released as an open source project.
+
+
+    During <a href="https://blog.golang.org/4years" target="_blank">Go’s 4th anniversary</a>, Andrew
+
+
+    finished the post with “Here&#39;s to four more years!”. Now that we have reached
+
+
+    that milestone, I cannot help but reflect on how much the project and
+
+
+    ecosystem has grown since then. In our post 4 years ago we included a chart
+
+
+    demonstrating Go&#39;s rising popularity on Google Trends with the search term
+
+
+    &#34;golang&#34;. Today, we’re including an updated chart. In this relative scale of
+
+
+    popularity, what was 100 four years ago is now a mere 17. Go’s popularity has
+
+
+    increased exponentially over the last 8 years and continues to grow.
+  </p>
+  
+
+      
+        
+<div class="image">
+  <img src="8years/image1.png">
+</div>
+
+      
+        
+  
+  <p>
+    Source: <a href="https://trends.google.com/trends/explore?date=2009-10-01%202017-10-30&amp;q=golang&amp;hl=en-US" target="_blank">trends.google.com</a>
+  </p>
+  
+
+      
+        
+  <h4 id="TOC_1.1.">Developers love Go</h4>
+  
+  
+  <p>
+    Go has been embraced by developers all over the world with approximately one
+
+
+    million users worldwide. In the <a href="https://octoverse.github.com/" target="_blank">freshly published 2017 Octoverse</a> 
+
+
+    by GitHub, <b>Go has become the #9 most popular language</b>, surpassing C.
+
+
+    <b>Go is the fastest growing language on GitHub in 2017</b> in the top 10 with
+
+
+    <b>52% growth over the previous year</b>. In growth, Go swapped places with
+
+
+    Javascript, which fell to the second spot with 44%.
+  </p>
+  
+
+<div class="image">
+  <img src="8years/image2.png">
+</div>
+
+  
+  <p>
+    Source: <a href="https://octoverse.github.com/" target="_blank">octoverse.github.com</a>
+  </p>
+  
+
+  
+  <p>
+    In <a href="https://insights.stackoverflow.com/survey/2017#most-loved-dreaded-and-wanted" target="_blank">Stack Overflow&#39;s 2017 developer survey</a>
+
+
+    , Go was the only language that was both on the <b>top 5 most loved and top 5 most wanted</b> languages. 
+
+
+    People who use Go, love it, and the people who aren’t using Go, want to be.
+  </p>
+  
+
+<div class="image">
+  <img src="8years/image3.png">
+</div>
+
+<div class="image">
+  <img src="8years/image4.png">
+</div>
+
+  
+  <p>
+    Source: <a href="https://insights.stackoverflow.com/survey/2017#most-loved-dreaded-and-wanted" target="_blank">insights.stackoverflow.com/survey/2017</a>
+  </p>
+  
+
+
+      
+        
+  <h4 id="TOC_1.2.">Go: The language of Cloud Infrastructure</h4>
+  
+  
+  <p>
+    In 2014, analyst Donnie Berkholz called Go 
+
+
+    <a href="http://redmonk.com/dberkholz/2014/03/18/go-the-emerging-language-of-cloud-infrastructure/" target="_blank">the emerging language of cloud infrastructure</a>.
+
+
+    <b>By 2017, Go has emerged as the language of cloud infrastructure</b>. 
+
+
+    Today, <b>every single cloud company has critical components of their cloud infrastructure implemented in Go</b>
+
+
+    including Google Cloud, AWS, Microsoft Azure, Digital Ocean, Heroku and many others. Go
+
+
+    is a key part of cloud companies like Alibaba, Cloudflare, and Dropbox. Go is
+
+
+    a critical part of open infrastructure including Kubernetes, Cloud Foundry,
+
+
+    Openshift, NATS, Docker, Istio, Etcd, Consul, Juju and many more. Companies
+
+
+    are increasingly choosing Go to build cloud infrastructure solutions.
+  </p>
+  
+
+
+      
+        
+  <h4 id="TOC_1.3.">Go’s Great Community</h4>
+  
+  
+  <p>
+    It may be hard to imagine that only four years ago the Go community was
+
+
+    transitioning from online-only to include in-person community with its first
+
+
+    conference. Now the Go community has had over 30 conferences all around the
+
+
+    world with hundreds of presentations and tens of thousands of attendees.
+
+
+    There are hundreds of Go meetups meeting monthly covering much of the globe.
+
+
+    Wherever you live, you are likely to find a Go meetup nearby.
+  </p>
+  
+
+  
+  <p>
+    Two different organizations have been established to help with inclusivity in
+
+
+    the Go community, Go Bridge and Women Who Go; the latter has grown to over 25
+
+
+    chapters. Both have been instrumental in offering free trainings. In 2017
+
+
+    alone over 50 scholarships to conferences have been given through efforts of
+
+
+    Go Bridge and Women Who Go.
+  </p>
+  
+
+  
+  <p>
+    This year we had two significant firsts for the Go project. We had our first
+
+
+    <a href="https://blog.golang.org/contributors-summit" target="_blank">contributor summit</a> where people from across the Go community came together to
+
+
+    discuss the needs and future of the Go project. Shortly after, we had the
+
+
+    first <a href="https://blog.golang.org/contributor-workshop" target="_blank">Go contributor workshop</a> 
+
+
+    where hundreds of people came to make their first Go contribution.
+  </p>
+  
+
+<div class="image">
+  <img src="8years/photo.jpg">
+</div>
+
+  
+  <p>
+    Photo by Sameer Ajmani
+  </p>
+  
+
+
+      
+        
+  <h4 id="TOC_1.4.">Go’s impact on open source </h4>
+  
+  
+  <p>
+    Go has become a major force in the world of open source powering some of the
+
+
+    most popular projects and enabling innovations across many industries. Find
+
+
+    thousands of additional applications and libraries at <a href="https://github.com/avelino/awesome-go" target="_blank">awesome-go</a>. Here are
+
+
+    just a handful of the most popular:
+  </p>
+  
+
+  <ul>
+  
+    <li><a href="https://mobyproject.org/" target="_blank">Moby</a> (formerly Docker) is a tool for packaging and running applications in lightweight containers. Its creator Solomon Hykes cited Go&#39;s standard library, concurrency primitives, and ease of deployment as key factors, and said &#34;To put it simply, if Docker had not been written in Go, it would not have been as successful.&#34;</li>
+  
+  </ul>
+
+  <ul>
+  
+    <li><a href="https://kubernetes.io/" target="_blank">Kubernetes</a> is a system for automating deployment, scaling and management of containerized applications. Initially designed by Google and used in the Google cloud, Kubernetes now is a critical part of every major cloud offering. </li>
+  
+  </ul>
+
+  <ul>
+  
+    <li><a href="https://gohugo.io/" target="_blank">Hugo</a> is now the most popular open-source static website engine. With its amazing speed and flexibility, Hugo makes building websites fun again. According to <a href="https://w3techs.com/technologies/overview/content_management/all" target="_blank">w3techs</a>, Hugo now has nearly 3x the usage of Jekyll, the former leader. </li>
+  
+  </ul>
+
+  <ul>
+  
+    <li><a href="https://prometheus.io/" target="_blank">Prometheus</a> is an open source monitoring solution and time series database that powers metrics and alerting designed to be the system you go to during an outage to allow you to quickly diagnose problems.</li>
+  
+  </ul>
+
+  <ul>
+  
+    <li><a href="https://grafana.com/" target="_blank">Grafana</a> is an open source, feature-rich metrics dashboard and graph editor for Graphite, Elasticsearch, OpenTSDB, Prometheus and InfluxDB.</li>
+  
+  </ul>
+
+  <ul>
+  
+    <li><a href="https://getlantern.org/" target="_blank">Lantern</a> delivers fast, reliable and secure access to blocked websites and apps. </li>
+  
+  </ul>
+
+  <ul>
+  
+    <li><a href="https://syncthing.net/" target="_blank">Syncthing</a> is an open-source cross platform peer-to-peer continuous file synchronization application</li>
+  
+  </ul>
+
+  <ul>
+  
+    <li><a href="https://keybase.io/" target="_blank">Keybase</a> is a new and free security app for mobile phones and computers. Think of it as an open source Dropbox &amp; Slack with end-to-end encryption public-key cryptography. </li>
+  
+  </ul>
+
+  <ul>
+  
+    <li><a href="https://github.com/junegunn/fzf" target="_blank">Fzf</a> is an interactive Unix filter for command-line that can be used with any list; files, command history, processes, hostnames, bookmarks, git commits, etc. Fzf supports Unix, macOS and has beta support for Windows. It also can operate as a vim plugin. </li>
+  
+  </ul>
+
+  
+  <p>
+    Many of these authors have said that their projects would not exist without
+
+
+    Go. Some like Kubernetes and Docker created entirely new solutions. Others
+
+
+    like Hugo, Syncthing and Fzf created more refined experiences where many
+
+
+    solutions already existed. The popularity of these applications alone is
+
+
+    proof that Go is a ideal language for a broad set of use cases.
+  </p>
+  
+
+
+      
+        
+  <h4 id="TOC_1.5.">Thank You</h4>
+  
+  
+  <p>
+    This is the eighth time we have had the pleasure of writing a birthday blog
+
+
+    post for Go and we continue to be overwhelmed by and grateful for the
+
+
+    enthusiasm and support of the Go community.
+  </p>
+  
+
+  
+  <p>
+    Since Go was first open sourced we have had 10 releases of the language,
+
+
+    libraries and tooling with more than 1680 contributors making over 50,000
+
+
+    commits to the project&#39;s 34 repositories; More than double the number of
+
+
+    contributors and nearly double the number of commits from only <a href="https://blog.golang.org/6years" target="_blank">two years ago</a>.
+
+
+    This year we announced that we have begun planning <a href="https://blog.golang.org/toward-go2" target="_blank">Go 2</a>, our first major
+
+
+    revision of the language and tooling.
+  </p>
+  
+
+  
+  <p>
+    The Go team would like to thank everyone who has contributed to the project,
+
+
+    whether you participate by contributing changes, reporting bugs, sharing your
+
+
+    expertise in design discussions, writing blog posts or books, running events,
+
+
+    attending or speaking at events, helping others learn or improve, open
+
+
+    sourcing Go packages you wrote, contributing artwork, introducing Go to
+
+
+    someone, or being part of the Go community. Without you, Go would not be as
+
+
+    complete, useful, or successful as it is today. 
+  </p>
+  
+
+  
+  <p>
+    Thank you, and here’s to eight more years!
+  </p>
+  
+
+
+      
+    
+  
+
+
+		
+			<p class="author">By Steve Francia</p>
+		
+	</div>
+
+	
+		
+	<div class="article" data-slug="/community-outreach-working-group">
+		<h3 class="title"><a href="/community-outreach-working-group">Community Outreach Working Group</a></h3>
+		<p class="date">5 September 2017</p>
+		
+
+  
+  
+    
+      
+  <h4 id="TOC_1.">Announcing the Go Community Outreach Working Group</h4>
+  
+  
+  <p>
+    The Go project has grown considerably with over half a million users and
+
+
+    community members all over the world. To date all community oriented activities
+
+
+    have been organized by the community with minimal involvement from the Go
+
+
+    project. We greatly appreciate these efforts.
+  </p>
+  
+
+  
+  <p>
+    After talking to many community organizers we have heard consistent
+
+
+    feedback that they would like better collaboration between organizers and
+
+
+    the Go project. We are forming the Community outreach Working Group (CWG)
+
+
+    to help support these community efforts.
+  </p>
+  
+
+
+    
+      
+  <h4 id="TOC_2.">The CWG Mission</h4>
+  
+  
+  <p>
+    The mission of the CWG is to act as a conduit between the broader Go
+
+
+    community, it’s organizers and the Go project. The CWG will help provide
+
+
+    the structures and community management necessary to create an online and
+
+
+    in person community that is enjoyable and rewarding to participate in. The
+
+
+    CWG leadership represents the Go project in these efforts.
+  </p>
+  
+
+  
+  <p>
+    <b>The CWG is responsible for:</b>
+  </p>
+  
+
+  <ul>
+  
+    <li>Defining programs to facilitate deeper collaboration across the community.</li>
+  
+    <li>Facilitating the coordination of Go events</li>
+  
+    <li>Establishing growth and expansion plans for the community</li>
+  
+    <li>Project exposure and accessibility</li>
+  
+    <li>Ecosystem Development</li>
+  
+  </ul>
+
+  
+  <p>
+    <b>Leadership:</b>
+  </p>
+  
+
+  <ul>
+  
+    <li><a href="https://twitter.com/ashleymcnamara" target="_blank">Ashley McNamara</a></li>
+  
+    <li><a href="https://twitter.com/Cassandraoid" target="_blank">Cassandra Salisbury</a></li>
+  
+    <li><a href="https://twitter.com/francesc" target="_blank">Francesc Campoy</a></li>
+  
+    <li><a href="https://twitter.com/spf13" target="_blank">Steve Francia</a></li>
+  
+  </ul>
+
+
+    
+      
+  <h4 id="TOC_3.">Plans for Action</h4>
+  
+  
+  <p>
+    The CWG has an <a href="https://github.com/golang/cwg" target="_blank">open GitHub repo</a> we’ve created for complete transparency
+
+
+    of our efforts.  We have various <a href="https://github.com/golang/cwg/projects" target="_blank">GitHub projects</a> which are acting as our
+
+
+    primary initiatives. Each project has a variety of <a href="https://github.com/golang/cwg/issues" target="_blank">issues</a> tied to them
+
+
+    with assignees from our Leadership team and <a href="https://github.com/golang/cwg/issues/15" target="_blank">our members</a>.
+  </p>
+  
+
+<div class="image">
+  <img src="community-outreach-working-group/project.png">
+</div>
+
+  
+  <p>
+    If you’d like to get involved, we encourage you to comment on the issue
+
+
+    that interests you or <a href="https://github.com/golang/cwg/issues/new" target="_blank">submit an issue</a> yourself!
+  </p>
+  
+
+
+    
+  
+
+
+		
+			<p class="author">By Steve Francia &amp; Cassandra Salisbury</p>
+		
+	</div>
+
+	
+		
+	<div class="article" data-slug="/go1.9">
+		<h3 class="title"><a href="/go1.9">Go 1.9 is released</a></h3>
+		<p class="date">24 August 2017</p>
+		
+
+  
+  
+    
+      
+        
+  
+  <p>
+    Today the Go team is happy to announce the release of Go 1.9.
+
+
+    You can get it from the <a href="https://golang.org/dl/" target="_blank">download page</a>.
+
+
+    There are many changes to the language, standard library, runtime, and tooling.
+
+
+    This post covers the most significant visible ones.
+
+
+    Most of the engineering effort put into this release went to improvements of the runtime and tooling,
+
+
+    which makes for a less exciting announcement, but nonetheless a great release.
+  </p>
+  
+
+      
+        
+  
+  <p>
+    The most important change to the language is the introduction of type aliases: a feature
+
+
+    created to support gradual code repair. A type alias declaration has the form:
+  </p>
+  
+
+      
+        
+  
+  <div class="code"><pre>type T1 = T2</pre></div>
+  
+
+      
+        
+  
+  <p>
+    This declaration introduces an alias name <code>T1</code> for the type <code>T2</code>, in the same way that <code>byte</code> has
+
+
+    always been an alias for <code>uint8</code>.
+
+
+    The <a href="https://golang.org/design/18130-type-alias" target="_blank">type alias design document</a> and
+
+
+    <a href="https://talks.golang.org/2016/refactor.article" target="_blank">an article on refactoring</a> cover this addition in more detail.
+  </p>
+  
+
+      
+        
+  
+  <p>
+    The new <a href="https://golang.org/pkg/math/bits" target="_blank">math/bits</a> package provides bit counting and manipulation functions
+
+
+    for unsigned integers, implemented by special CPU instructions when possible.
+
+
+    For example, on x86-64 systems, <code>bits.TrailingZeros(x)</code> uses the
+
+
+    <a href="https://pdos.csail.mit.edu/6.828/2010/readings/i386/BSF.htm" target="_blank">BSF</a> instruction.
+  </p>
+  
+
+      
+        
+  
+  <p>
+    The <code>sync</code> package has added a new <a href="https://golang.org/pkg/sync#Map" target="_blank">Map</a> type, safe for concurrent access.
+
+
+    You can read more about it from its documentation and learn more about why it was created from this
+
+
+    <a href="https://www.youtube.com/watch?v=C1EtfDnsdDs" target="_blank">GopherCon 2017 lightning talk</a>
+
+
+    (<a href="https://github.com/gophercon/2017-talks/blob/master/lightningtalks/BryanCMills-AnOverviewOfSyncMap/An%20Overview%20of%20sync.Map.pdf" target="_blank">slides</a>).
+
+
+    It is not a general replacement for Go&#39;s map type; please see the documentation to learn when it should be used.
+  </p>
+  
+
+      
+        
+  
+  <p>
+    The <code>testing</code> package also has an addition. The new <code>Helper</code> method, added to both
+
+
+    <a href="https://golang.org/pkg/testing#T.Helper" target="_blank">testing.T</a> and <a href="https://golang.org/pkg/testing#B.Helper" target="_blank">testing.B</a>,
+
+
+    marks the calling function as a test helper function.
+
+
+    When the testing package prints file and line information, it shows the location of the call to a helper function
+
+
+    instead of a line in the helper function itself.
+  </p>
+  
+
+      
+        
+  
+  <p>
+    For example, consider this test:
+  </p>
+  
+
+      
+        
+  
+	<div class="code">
+
+
+<pre><span num="7">package p</span>
+<span num="8"></span>
+<span num="9">import &#34;testing&#34;</span>
+<span num="10"></span>
+<span num="11">func failure(t *testing.T) {</span>
+<span num="12">    t.Helper() // This call silences this function in error reports.</span>
+<span num="13">    t.Fatal(&#34;failure&#34;)</span>
+<span num="14">}</span>
+<span num="15"></span>
+<span num="16">func Test(t *testing.T) {</span>
+<span num="17">    failure(t)</span>
+<span num="18">}</span>
+</pre>
+
+
+</div>
+  
+
+      
+        
+  
+  <p>
+    Because <code>failure</code> identifies itself as a test helper, the error message printed during <code>Test</code> will indicate line 11,
+
+
+    where <code>failure</code> is called, instead of line 7, where <code>failure</code> calls <code>t.Fatal</code>.
+  </p>
+  
+
+      
+        
+  
+  <p>
+    The <code>time</code> package now transparently tracks monotonic time in each <code>Time</code> value,
+
+
+    making computing durations between two <code>Time</code> values a safe operation in the presence of wall clock adjustments.
+
+
+    For example, this code now computes the right elapsed time even across a leap second clock reset:
+  </p>
+  
+
+      
+        
+  
+  <div class="code"><pre>start := time.Now()
+f()
+elapsed := time.Since(start)</pre></div>
+  
+
+      
+        
+  
+  <p>
+    See the <a href="http://beta.golang.org/pkg/time/#hdr-Monotonic_Clocks" target="_blank">package docs</a> and
+
+
+    <a href="https://github.com/golang/proposal/blob/master/design/12914-monotonic.md" target="_blank">design document</a> for details.
+  </p>
+  
+
+      
+        
+  
+  <p>
+    Finally, as part of the efforts to make the Go compiler faster, Go 1.9 compiles functions in a package concurrently.
+  </p>
+  
+
+      
+        
+  
+  <p>
+    Go 1.9 includes many more additions, improvements, and fixes. Find the complete set of changes,
+
+
+    and more information about the improvements listed above, in the
+
+
+    <a href="https://golang.org/doc/go1.9" target="_blank">Go 1.9 release notes</a>.
+  </p>
+  
+
+      
+        
+  
+  <p>
+    To celebrate the release, Go User Groups around the world are holding
+
+
+    <a href="https://github.com/golang/cowg/blob/master/events/2017-08-go1.9-release-party.md" target="_blank">release parties</a>.
+  </p>
+  
+
+      
+    
+  
+
+
+		
+			<p class="author">By Francesc Campoy</p>
+		
+	</div>
+
+	
+		
+	<div class="article" data-slug="/contributor-workshop">
+		<h3 class="title"><a href="/contributor-workshop">Contribution Workshop</a></h3>
+		<p class="date">9 August 2017</p>
+		
+
+  
+  
+    
+      
+        
+  <h4 id="TOC_1.1.">Event Overview</h4>
+  
+  
+  <p>
+    by <a href="https://twitter.com/spf13" target="_blank">Steve</a>
+  </p>
+  
+
+  
+  <p>
+    During the community day at GopherCon, the Go team held two workshops
+
+
+    where we worked with people to help them make their first contribution to the
+
+
+    Go project. This was the first time the Go project has ever attempted anything
+
+
+    like this. We had about 140 participants and about 35 people who volunteered as
+
+
+    mentors. Mentors not only received warm fuzzy feelings for helping others, but
+
+
+    also a very stylish Go Mentor trucker hat. We had contributors of all
+
+
+    ages and experience levels coming from North and South America, Africa, Europe,
+
+
+    Asia, and Australia. It was truly a worldwide effort of Gophers coming together
+
+
+    at GopherCon.
+  </p>
+  
+
+  
+  <p>
+    One of our reasons for running the workshop was for it to act as a forcing
+
+
+    function to make us improve our contributor experience. In preparation for the
+
+
+    workshop, we rewrote our contributor guide, including adding a &#34;troubleshooting&#34;
+
+
+    section and built a tool <code>go-contrib-init</code>, which automated the process of
+
+
+    setting up a development environment to be able to contribute to Go.
+  </p>
+  
+
+  
+  <p>
+    For the workshop itself, we developed a presentation <i>&#34;Contributing to Go,&#34;</i>
+
+
+    and a dashboard / scoreboard that was presented during the event. The
+
+
+    scoreboard was designed to encourage us all to work together towards a common
+
+
+    goal of seeing our collective score increase. Participants added 1, 2 or 3 points to
+
+
+    the total score when they performed actions like registering an account, making
+
+
+    a change list (also known as a CL, similar to a pull request),
+
+
+    amending a CL, or submitting a CL.
+  </p>
+  
+
+<div class="image">
+  <img src="contributor-workshop/image17.png">
+</div>
+
+  
+  <p>
+    Brad Fitzpatrick, who stayed home from GopherCon this year, was ready and
+
+
+    waiting to review all CLs submitted. He was so quick to review that many people
+
+
+    thought he was an automated bot. Internally our team is now calling him
+
+
+    &#34;BradBot&#34; mostly because we are in awe and a bit jealous.
+  </p>
+  
+
+<div class="image">
+  <img src="contributor-workshop/image9.jpg">
+</div>
+
+<div class="image">
+  <img src="contributor-workshop/image6.png">
+</div>
+
+  <h4 id="TOC_1.1.1.">Impact</h4>
+  
+  
+  <p>
+    We had a total of 65 CLs submitted from the people who participated in the
+
+
+    workshop (within a week of the workshop). Of these, 44 were from contributors
+
+
+    who had never previously contributed to any of the repos in the Go project.
+
+
+    Half (22) of these contributions were already merged. Many of the others are
+
+
+    waiting on the codebase to thaw as we are in the middle of a freeze for the
+
+
+    upcoming 1.9 release. In addition to CLs, many contributed to the project in
+
+
+    the form of bug reports,
+
+
+    <a href="https://golang.org/wiki/Gardening" target="_blank">gardening tasks</a>, and other types
+
+
+    of contributions.
+  </p>
+  
+
+  
+  <p>
+    The most common type of contribution was an example function to be used in the
+
+
+    documentation. The <a href="https://blog.golang.org/survey2016-results" target="_blank">Go User survey</a>
+
+
+    identified that our documentation was significantly lacking examples. In the
+
+
+    presentation, we asked users to find a package they loved and to add an example. In
+
+
+    the Go project, examples are written as code in Go files
+
+
+    (with specific naming) and the <code>go doc</code> tool displays them along side the documentation.
+
+
+    This is a perfect first contribution as it&#39;s something that can be merged
+
+
+    during a freeze, it&#39;s of critical importance to our users, and it&#39;s an addition
+
+
+    that has a relatively narrow scope.
+  </p>
+  
+
+  
+  <p>
+    One of the examples added is that of creating a Stringer, one of the more
+
+
+    widely used interfaces in Go.
+
+
+    <a href="https://golang.org/cl/49270/" target="_blank">CL 49270</a>
+  </p>
+  
+
+  
+  <p>
+    In addition to examples, many people contributed critical bug fixes including:
+  </p>
+  
+
+  <ul>
+  
+    <li><a href="https://golang.org/cl/48988/" target="_blank">CL 48988</a> fixing <a href="https://golang.org/issue/21029" target="_blank">issue #21029</a></li>
+  
+    <li><a href="https://golang.org/cl/49050/" target="_blank">CL 49050</a> fixing <a href="https://golang.org/issue/20054" target="_blank">issue #20054</a></li>
+  
+    <li><a href="https://golang.org/cl/49031/" target="_blank">CL 49031</a> fixing <a href="https://golang.org/issue/20166" target="_blank">issue #20166</a></li>
+  
+    <li><a href="https://golang.org/cl/49170/" target="_blank">CL 49170</a> fixing <a href="https://golang.org/issue/20877" target="_blank">issue #20877</a></li>
+  
+  </ul>
+
+  
+  <p>
+    Some people even surprised us by arriving with a bug in mind that they wanted
+
+
+    to fix. Nikhita arrived ready to tackle
+
+
+    <a href="https://golang.org/issue/20786" target="_blank">issue #20786</a>
+
+
+    and she did submitting
+
+
+    <a href="https://golang.org/cl/48871/" target="_blank">CL 48871</a>,
+
+
+    after which she tweeted:
+  </p>
+  
+
+<div class="image">
+  <img src="contributor-workshop/image19.png">
+</div>
+
+  
+  <p>
+    Not only were some great improvements made, but most importantly, we narrowed
+
+
+    the gap between the core Go team and the broader community members. Many people
+
+
+    on the Go team remarked that the community members were teaching them things
+
+
+    about the Go project. People in the community (in person, and on Twitter)
+
+
+    remarked that felt welcome to participate in the project.
+  </p>
+  
+
+<div class="image">
+  <img src="contributor-workshop/image12.png">
+</div>
+
+<div class="image">
+  <img src="contributor-workshop/image13.png">
+</div>
+
+<div class="image">
+  <img src="contributor-workshop/image3.png">
+</div>
+
+
+  <h4 id="TOC_1.1.2.">Future</h4>
+  
+  
+  <p>
+    The event was successful well beyond our expectations. Sameer Ajmani, Go team
+
+
+    manager said, &#34;The contributor workshop was incredibly fun and educational–for
+
+
+    the Go team.  We cringed as users hit the rough edges in our process, and
+
+
+    celebrated when they got up on the dashboard. The cheer when the group score
+
+
+    hit 1000 was awesome.&#34;
+  </p>
+  
+
+  
+  <p>
+    We are looking into ways to make this workshop easier to run for future events
+
+
+    (like meetups and conferences). Our biggest challenge is providing enough
+
+
+    mentorship so that users feel supported. If you have any ideas or would like to
+
+
+    help with this process please <a href="mailto:spf@golang.org" target="_blank">let me know</a>.
+  </p>
+  
+
+  
+  <p>
+    I&#39;ve asked a few participants of the event to share their experiences below:
+  </p>
+  
+
+
+
+      
+        
+  <h4 id="TOC_1.2.">My Contribution Experience</h4>
+  
+  
+  <p>
+    by <a href="https://twitter.com/cassandraoid" target="_blank">Cassandra</a>
+  </p>
+  
+
+  
+  <p>
+    When I heard about the go-contrib workshop I was very excited and then I was
+
+
+    extremely intimidated. I was encouraged by a member of the Go team to
+
+
+    participate, so I thought what the heck.
+  </p>
+  
+
+  
+  <p>
+    As I walked into the room (let&#39;s be real, I ran into the room because I was
+
+
+    running late) I was pleased to see the room was jam-packed. I looked around for
+
+
+    people in Gopher caps, which was the main indicator they were teachers. I sat
+
+
+    down at one of the 16 round tables that had two hats and three non-hats.
+
+
+    Brought up my screen and was ready to roll…
+  </p>
+  
+
+  
+  <p>
+    Jess Frazelle stood up and started the presentation and provided the group with
+
+
+    <a href="https://docs.google.com/presentation/d/1ap2fycBSgoo-jCswhK9lqgCIFroE1pYpsXC1ffYBCq4/edit#slide=id.p" target="_blank">a link</a>
+
+
+    to make it easy to follow.
+  </p>
+  
+
+<div class="image">
+  <img src="contributor-workshop/image16.png">
+</div>
+
+  
+  <p>
+    The murmurs grew from a deep undercurrent to a resounding melody of voices,
+
+
+    people were getting their computers set up with Go, they were skipping ahead to
+
+
+    make sure their GOPATH was set, and were… wait what&#39;s Gerrit?
+  </p>
+  
+
+  
+  <p>
+    Most of us had to get a little intro to Gerrit. I had no clue what it was, but
+
+
+    luckily there was a handy slide. Jess explained that it was an alternative to
+
+
+    GitHub with slightly more advanced code review tools. We then went through
+
+
+    GitHub vs Geritt terminology, so we had better understanding of the process.
+  </p>
+  
+
+<div class="image">
+  <img src="contributor-workshop/image10.png">
+</div>
+
+  
+  <p>
+    Ok, now it was time to become a <b> freaking*</b> <b>Go</b> <b> contributor*</b>.
+  </p>
+  
+
+  
+  <p>
+    To make this more exciting than it already is, the Go team set up a game where
+
+
+    we could track as a group how many points we could rack up based on the Gerrit
+
+
+    score system.
+  </p>
+  
+
+<div class="image">
+  <img src="contributor-workshop/image7.png">
+</div>
+
+  
+  <p>
+    Seeing your name pop up on the board and listening to everyone&#39;s excitement was
+
+
+    intoxicating. It also invoked a sense of teamwork that lead to a feeling of
+
+
+    inclusion and feeling like you were truly a part of the Go community.
+  </p>
+  
+
+<div class="image">
+  <img src="contributor-workshop/image11.png">
+</div>
+
+  
+  <p>
+    In 6 steps a room of around 80 people were able to learn how to contribute to
+
+
+    go within an hour. That&#39;s a feat!
+  </p>
+  
+
+  
+  <p>
+    It wasn&#39;t nearly as difficult as I anticipated and it wasn&#39;t out of scope for a
+
+
+    total newbie. It fostered a sense of community in an active and tangible way as
+
+
+    well as a sense of inclusion in the illustrious process of Go contributions.
+  </p>
+  
+
+  
+  <p>
+    I&#39;d personally like to thank the Go Team, the Gopher mentors in hats, and my
+
+
+    fellow participants for making it one of my most memorable moments at
+
+
+    GopherCon.
+  </p>
+  
+
+
+      
+        
+  <h4 id="TOC_1.3.">My Contribution Experience</h4>
+  
+  
+  <p>
+    by <a href="https://twitter.com/mbbroberg" target="_blank">Matt</a>
+  </p>
+  
+
+  
+  <p>
+    I&#39;ve always found programming languages to be intimidating. It&#39;s the code that
+
+
+    enables the world to write code. Given the impact, surely smarter people than
+
+
+    me should be working on it... but that fear was something to overcome. So when
+
+
+    the opportunity to join a workshop to contribute to my new favorite programming
+
+
+    language came up, I was excite to see how I could and how I could help. A month
+
+
+    later, I&#39;m now certain that anyone and everyone can (and should) contribute back to Go.
+  </p>
+  
+
+  
+  <p>
+    Here are my very verbose steps to go from 0 to 2 contributions to Go:
+  </p>
+  
+
+  <h4 id="TOC_1.3.1.">The Setup</h4>
+  
+  
+  <p>
+    Given Go&#39;s use of Gerrit, I started by setting up my environment for it. <a href="https://docs.google.com/presentation/d/1ap2fycBSgoo-jCswhK9lqgCIFroE1pYpsXC1ffYBCq4/edit#slide=id.g1f953ef7df_0_9" target="_blank">Jess Frazzelle&#39;s guide</a>
+
+
+    is a great place to start to not miss a step.
+  </p>
+  
+
+  
+  <p>
+    The real fun starts when you clone the Go repo. Ironically, you don&#39;t hack on
+
+
+    Go under <code>$GOPATH</code>, so I put it in my other workspace (which is <code>~/Develop</code>).
+  </p>
+  
+
+  
+  <div class="code"><pre>cd $DEV # That&#39;s my source code folder outside of $GOPATH
+git clone --depth 1 https://go.googlesource.com/go</pre></div>
+  
+
+  
+  <p>
+    Then install the handy dandy helper tool, <code>go-contrib-init</code>:
+  </p>
+  
+
+  
+  <div class="code"><pre>go get -u golang.org/x/tools/cmd/go-contrib-init</pre></div>
+  
+
+  
+  <p>
+    Now you can run <code>go-contrib-init</code> from the <code>go/</code> folder we cloned above and see
+
+
+    whether or not we&#39;re ready to contribute. But hold on if you&#39;re following along,
+
+
+    you&#39;re not ready just yet.
+  </p>
+  
+
+  
+  <p>
+    Next, install <code>codereview</code> so you can participate in a Gerrit code review:
+  </p>
+  
+
+  
+  <div class="code"><pre>go get -u golang.org/x/review/git-codereview</pre></div>
+  
+
+  
+  <p>
+    This package includes `git change` and `git mail` which will replace your
+
+
+    normal workflow of `git commit` and `git push` respectively.
+  </p>
+  
+
+  
+  <p>
+    Okay, installations are out of the way. Now setup your <a href="https://go-review.googlesource.com/settings/#Profile" target="_blank">Gerrit account here</a>,
+
+
+    then <a href="https://go-review.googlesource.com/settings#Agreements" target="_blank">sign the CLA</a> appropriate for
+
+
+    you (I signed a personal one for all Google projects, but choose the right option for you.
+
+
+    You can see all CLAs you&#39;ve signed at <a href="https://cla.developers.google.com/clas" target="_blank">cla.developers.google.com/clas</a>).
+  </p>
+  
+
+  
+  <p>
+    AND BAM. You&#39;re good (to go)! But where to contribute?
+  </p>
+  
+
+
+  <h4 id="TOC_1.3.2.">Contributing</h4>
+  
+  
+  <p>
+    In the workshop, they sent us into the <code>scratch</code> repository, which is a safe place to
+
+
+    fool around in order to master the workflow:
+  </p>
+  
+
+  
+  <div class="code"><pre>cd $(go env GOPATH)/src/golang.org/x
+git clone --depth 1 [[https://go.googlesource.com/scratch][go.googlesource.com/scratch]]</pre></div>
+  
+
+  
+  <p>
+    First stop is to <code>cd</code> in and run <code>go-contrib-init</code> to make sure you&#39;re ready to contribute:
+  </p>
+  
+
+  
+  <div class="code"><pre>go-contrib-init
+All good. Happy hacking!</pre></div>
+  
+
+  
+  <p>
+    From there, I made a folder named after my GitHub account, did a `git add -u`
+
+
+    then took `git change` for a spin. It has a hash that keeps track of your work,
+
+
+    which is the one line you shouldn&#39;t touch. Other than that, it feels just like
+
+
+    `git commit`. Once I got the commit message matching the format of
+
+
+    `package: description` (description begins with a lowercase), I used
+
+
+    `git mail` to send it over to Gerrit.
+  </p>
+  
+
+  
+  <p>
+    Two good notes to take at this point: `git change` also works like `git commit --amend`, so
+
+
+    if you need to update your patch you can <code>add</code> then <code>change</code> and it will all
+
+
+    link to the same patch. Secondly, you can always review your patch from your
+
+
+    <a href="https://go-review.googlesource.com/dashboard/" target="_blank">personal Gerrit dashboard</a>.
+  </p>
+  
+
+  
+  <p>
+    After a few back and forths, I officially had a contribute to Go! And if Jaana
+
+
+    is right, it might be the first with emojis ✌️.
+  </p>
+  
+
+<div class="image">
+  <img src="contributor-workshop/image15.png">
+</div>
+
+<div class="image">
+  <img src="contributor-workshop/image23.png">
+</div>
+
+
+  <h4 id="TOC_1.3.3.">Contributing, For Real</h4>
+  
+  
+  <p>
+    The scratch repo is fun and all, but there&#39;s a ton of ways to get into the
+
+
+    depths of Go&#39;s packages and give back. It&#39;s at this point where I cruised
+
+
+    around the many packages available to see what was available and interesting to
+
+
+    me. And by &#34;cruised around&#34; I mean attempted to find a list of packages, then
+
+
+    went to my source code to see what&#39;s around under the <code>go/src/</code> folder:
+  </p>
+  
+
+<div class="image">
+  <img src="contributor-workshop/image22.png">
+</div>
+
+  
+  <p>
+    I decided to see what I can do in the <code>regexp</code> package, maybe out of love and
+
+
+    fear of regex. Here&#39;s where I switched to the
+
+
+    <a href="https://godoc.org/regexp" target="_blank">website&#39;s view of the package</a> (it&#39;s good to know
+
+
+    that each standard package can be found at https://godoc.org/$PACKAGENAME). In
+
+
+    there I noticed that <code>QuoteMeta</code> was missing the same level of detailed examples
+
+
+    other functions have (and I could use the practice using Gerrit).
+  </p>
+  
+
+<div class="image">
+  <img src="contributor-workshop/image1.png">
+</div>
+
+  
+  <p>
+    I started looking at <code>go/src/regexp</code> to try to find where to add examples and I
+
+
+    got lost pretty quickly. Lucky for me, <a href="https://twitter.com/francesc" target="_blank">Francesc</a> was around that day. He walked
+
+
+    me through how all examples are actually in-line tests in a `example_test.go
+
+
+    file. They follow the format of test cases followed by &#34;Output&#34; commented out
+
+
+    and then the answers to the tests. For example:
+  </p>
+  
+
+  
+  <div class="code"><pre>func ExampleRegexp_FindString() {
+    re := regexp.MustCompile(&#34;fo.?&#34;)
+    fmt.Printf(&#34;%q\n&#34;, re.FindString(&#34;seafood&#34;))
+    fmt.Printf(&#34;%q\n&#34;, re.FindString(&#34;meat&#34;))
+    // Output:
+    // &#34;foo&#34;
+    // &#34;&#34;
+}</pre></div>
+  
+
+  
+  <p>
+    Kind of cool, right?? I followed Francesc&#39;s lead and added a function
+
+
+    <code>ExampleQuoteMeta</code> and added a few I thought would be helpful. From there it&#39;s
+
+
+    a `git change` and `git mail` to Gerrit!
+  </p>
+  
+
+  
+  <p>
+    I have to say that Steve Francia challenged me to &#34;find something that isn&#39;t an
+
+
+    open issue and fix it,&#34; so I included some documentation changes for QuoteMeta
+
+
+    in my patch. It&#39;s going to be open for a bit longer given the additional scope,
+
+
+    but I think it&#39;s worth it on this one.
+  </p>
+  
+
+  
+  <p>
+    I can hear your question already: how did I verify it worked? Well it wasn&#39;t
+
+
+    easy to be honest. Running `go test example_test.go -run QuoteMeta -v` won&#39;t do
+
+
+    it since we&#39;re working outside of our $GOPATH. I struggled to figure it out
+
+
+    until <a href="https://medium.com/@vCabbage/go-testing-standard-library-changes-1e9cbed11339" target="_blank">Kale Blakenship wrote this awesome post on testing in Go</a>.
+
+
+    Bookmark this one for later.
+  </p>
+  
+
+  
+  <p>
+    You can see my completed <a href="https://go-review.googlesource.com/c/49130/" target="_blank">contribution here</a>. What I also hope you see is
+
+
+    how simple it is to get into the flow of contributing. If you&#39;re like me,
+
+
+    you&#39;ll be good at finding a small typo or missing example in the docs to start to
+
+
+    get used to the `git codereview` workflow. After that, you&#39;ll be ready to find
+
+
+    an open issue, ideally one <a href="https://github.com/golang/go/milestones" target="_blank">tagged for an upcoming release</a>, and give it a go. No matter
+
+
+    what you choose to do, definitely go forth and do it. The Go team proved to me
+
+
+    just how much they care about helping us all contribute back. I can&#39;t wait for
+
+
+    my next `git mail`.
+  </p>
+  
+
+
+
+      
+        
+  <h4 id="TOC_1.4.">My Mentorship Experience</h4>
+  
+  
+  <p>
+    by <a href="https://twitter.com/shurcooL" target="_blank">Dmitri</a>
+  </p>
+  
+
+  
+  <p>
+    I was looking forward to participating in the Contribution Workshop event as a
+
+
+    mentor. I had high expectations for the event, and thought it was a great idea
+
+
+    before it started.
+  </p>
+  
+
+  
+  <p>
+    I made my first contribution to Go on May 10th, 2014. I remember it was about
+
+
+    four months from the moment I wanted to contribute, until that day, when I
+
+
+    actually sent my first CL. It took that long to build up the courage and fully
+
+
+    commit to figuring out the process. I was an experienced software engineer at
+
+
+    the time. Despite that, the Go contribution process felt alien—being unlike all
+
+
+    other processes I was already familiar with—and therefore seemed intimidating.
+
+
+    It was well documented though, so I knew it would be just a matter of finding
+
+
+    the time, sitting down, and doing it. The &#34;unknown&#34; factor kept me from giving
+
+
+    it a shot.
+  </p>
+  
+
+  
+  <p>
+    After a few months passed, I thought &#34;enough is enough,&#34; and decided to
+
+
+    dedicate an entire day of an upcoming weekend to figuring out the process. I
+
+
+    set aside all of Saturday for doing one thing: sending my first CL to Go. I
+
+
+    opened up <a href="https://golang.org/doc/contribute.html" target="_blank">the Contribution Guide</a>
+
+
+    and started following all the steps, from the very top. Within an hour, I was
+
+
+    done. I had send my first CL. I was both in awe and shock. In awe, because I
+
+
+    had finally sent a contribution to Go, and it was accepted! In shock, because,
+
+
+    why did I wait so long to finally do this? Following the steps in
+
+
+    <a href="https://golang.org/doc/contribute.html" target="_blank">the Contribution Guide</a> was very
+
+
+    easy, and the entire process went completely smoothly. If only someone had told
+
+
+    me that I&#39;d be done within an hour and nothing would go wrong, I would&#39;ve done
+
+
+    it much sooner!
+  </p>
+  
+
+  
+  <p>
+    Which brings me to this event and why I thought it was such a good idea. For
+
+
+    anyone who ever wanted to contribute to Go, but felt daunted by the unfamiliar
+
+
+    and seemingly lengthy process (like I was during those four months), this was
+
+
+    their chance! Not only is it easy to commit to figuring it out by attending the
+
+
+    event, but also the Go team and helpful volunteer mentors would be there to
+
+
+    help you along the way.
+  </p>
+  
+
+  
+  <p>
+    Despite the already high expectations I had for the event, my expectations were
+
+
+    exceeded. For one, the Go team had prepared really well and invested a lot in
+
+
+    making the event that much more enjoyable for everyone. There was a very fun
+
+
+    presentation that went over all the contributing steps quickly. There was a
+
+
+    dashboard made for the event, where everyone&#39;s successfully completed steps
+
+
+    were rewarded with points towards a global score. That made it into a very
+
+
+    collaborative and social event! Finally, and most importantly, they were Go
+
+
+    team members like Brad Fitzpatrick behind the scenes, helping review CLs
+
+
+    promptly! That meant the CLs that were submitted received reviews quickly, with
+
+
+    actionable next steps, so everyone could move forward and learn more.
+  </p>
+  
+
+  
+  <p>
+    I originally anticipated the event to be somewhat dull, in that the
+
+
+    contribution steps are extremely simple to follow. However, I found that wasn&#39;t
+
+
+    always the case, and I was able to use my expertise in Go to help out people
+
+
+    who got stuck in various unexpected places. It turns out, the real world is
+
+
+    filled with edge cases. For instance, someone had two git emails, one personal
+
+
+    and another for work. There was a delay with signing the CLA for the work
+
+
+    email, so they tried to use their personal email instead. That meant each
+
+
+    commit had to be amended to use the right email, something the tools didn&#39;t
+
+
+    take into account. (Luckily, there is a troubleshooting section in the
+
+
+    contribution guide covering this exact issue!) There were other subtle mistakes
+
+
+    or environment misconfiguration that some people ran into, because having more
+
+
+    than one Go installation was a bit unusual. Sometimes, the GOROOT environment
+
+
+    variable had to be explicitly set, temporarily, to get godoc to show changes in
+
+
+    the right standard library (I was tongue-in-cheek looking over my shoulder to
+
+
+    check for Dave Cheney as I uttered those words).
+  </p>
+  
+
+  
+  <p>
+    Overall, I oversaw a few new gophers make their first Go contributions. They
+
+
+    sent the CLs, responded to review feedback, made edits, iterated until everyone
+
+
+    was happy, and eventually saw their first Go contributions get merged to
+
+
+    master! It was very rewarding to see the happiness on their faces, because the
+
+
+    joy of making one&#39;s first contribution is something I can relate to myself. It
+
+
+    was also great to be able to help them out, and explain tricky situations that
+
+
+    they sometimes found themselves. From what I can tell, many happy gophers
+
+
+    walked away from the event, myself included!
+  </p>
+  
+
+
+      
+        
+  <h4 id="TOC_1.5.">Photos from the event</h4>
+  
+<div class="image">
+  <img src="contributor-workshop/image2.jpg">
+</div>
+
+<div class="image">
+  <img src="contributor-workshop/image4.jpg">
+</div>
+
+<div class="image">
+  <img src="contributor-workshop/image5.jpg">
+</div>
+
+<div class="image">
+  <img src="contributor-workshop/image8.jpg">
+</div>
+
+<div class="image">
+  <img src="contributor-workshop/image14.jpg">
+</div>
+
+<div class="image">
+  <img src="contributor-workshop/image18.jpg">
+</div>
+
+<div class="image">
+  <img src="contributor-workshop/image20.jpg">
+</div>
+
+<div class="image">
+  <img src="contributor-workshop/image21.jpg">
+</div>
+
+  
+  <p>
+    Photos by Sameer Ajmani &amp; Steve Francia
+  </p>
+  
+
+
+      
+    
+  
+
+
+		
+			<p class="author">By Steve Francia, Cassandra Salisbury, Matt Broberg, Dmitri Shuralyov</p>
+		
+	</div>
+
+	
+	<p>See the <a href="/index">index</a> for more articles.
+
+</div>
+
+<div id="footer">
+	<p>
+	Except as
+	<a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+	the content of this page is licensed under the Creative Commons
+	Attribution 3.0 License,<br>
+	and code is licensed under a <a href="//golang.org/LICENSE">BSD license</a>.<br>
+	<a href="//golang.org/doc/tos.html">Terms of Service</a> | 
+	<a href="//www.google.com/intl/en/policies/privacy/">Privacy Policy</a> |
+	<a href="https://go.googlesource.com/blog/">View the source code</a>
+	</p>
+</div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+(function() {
+  var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+  ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+  var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</body>
+<script src="/lib/godoc/jquery.js"></script>
+<script src="/lib/godoc/playground.js"></script>
+<script src="/lib/godoc/play.js"></script>
+<script src="/lib/godoc/godocs.js"></script>
+<script>
+$(function() {
+	
+	$('.playground > pre.numbers, .code > pre.numbers').each(function() {
+		var $spans = $(this).find('> span');
+
+		
+		var max = 0;
+		$spans.each(function() {
+			var n = $(this).attr('num')*1;
+			if (n > max) max = n;
+		});
+		var width = 2;
+		while (max > 10) {
+			max = max / 10;
+			width++;
+		}
+
+		
+		$spans.each(function() {
+			var n = $(this).attr('num')+' ';
+			while (n.length < width) n = ' '+n;
+			$('<span class="number">').text(n).insertBefore(this);
+		});
+	});
+
+	initPlayground(new HTTPTransport());
+});
+</script>
+</html>
