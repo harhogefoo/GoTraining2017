@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>items</h1>
+<ul>
+{{range $key, $value := .}}
+    <li>{{$key}}: {{$value}}</li>
+{{end}}
+</ul>
+</body>
+</html>
