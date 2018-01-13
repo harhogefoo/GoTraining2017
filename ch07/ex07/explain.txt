@@ -1,0 +1,1 @@
+暗黙的にtempconv.CelsiusのString関数が呼ばれているため
