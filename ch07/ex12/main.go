@@ -39,9 +39,6 @@ func (db database) list(w http.ResponseWriter, req *http.Request) {
 	if err := t.ExecuteTemplate(w, "index.html", db); err != nil {
 		log.Fatal(err)
 	}
-	//for item, price := range db {
-	//	fmt.Fprintf(w, "%s: %s\n", item, price)
-	//}
 }
 
 func (db database) price(w http.ResponseWriter, req *http.Request) {
