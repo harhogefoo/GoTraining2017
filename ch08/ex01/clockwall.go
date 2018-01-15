@@ -6,27 +6,42 @@ import (
 	"fmt"
 	"bufio"
 	"strings"
+	"os"
 )
+
+type clock struct {
+	location string
+	url string
+}
 
 var times = make([]string, 3)
 
 func main() {
-	addresses := []string{
-		"localhost:8010",
-		"localhost:8020",
-		"localhost:8030",
+	if len(os.Args) == 1 {
+		fmt.Println("illegal argument.")
+		return
 	}
 
-	for i, address := range  addresses {
-		go connect(address, i)
+	clocks := make([]clock, 0)
+	for _, arg := range os.Args[1:] {
+		parsedArg := strings.Split(arg, "=")
+		if len(parsedArg) != 2 {
+			fmt.Println("illegal argument.")
+			return
+		} else {
+			clocks = append(clocks, clock{parsedArg[0],parsedArg[1] })
+		}
+	}
+
+	for i, clock := range clocks {
+		go connect(clock, i)
 	}
 
 	select {}  // infinite loop
 }
 
-func connect(address string, index int) {
-	fmt.Printf("connect: %s\n", address)
-	conn, err := net.Dial("tcp", address)
+func connect(c clock, index int) {
+	conn, err := net.Dial("tcp", c.url)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -37,7 +52,7 @@ func connect(address string, index int) {
 		if err != nil {
 			return
 		}
-		times[index] = fmt.Sprintf("%s[%s]", address, bytes)
+		times[index] = fmt.Sprintf("%s[%s]", c.location, bytes)
 		fmt.Printf("\r%s", strings.Join(times, " "))
 	}
 }
